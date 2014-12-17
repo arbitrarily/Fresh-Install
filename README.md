@@ -7,7 +7,7 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 
 
 ### Version
-1.0.2
+1.0.3
 
 ### Programs
 Programs to install:
@@ -16,6 +16,7 @@ Programs to install:
 * Adobe Photoshop
 * Airmail
 * Balsamiq Mockups
+* Bitnami
 * CloudApp
 * DropBox
 * Google Chrome
@@ -24,19 +25,20 @@ Programs to install:
 * iPassword
 * iTerm
 * Mozilla Firefox
-*
 * Sequel Pro
 * Sublime Text
 * Xcode
 
 Non Essential:
 * Disk Inventory X
+* Growl
+* Hands Off!
+* OmniGraffle
 * Sourcetree
 * Sitesucker
 * The Unarchiver
 * VirtualBox
 * VLC
-*
 
 ### Sublime Text Preferences
 ```sh
@@ -140,7 +142,14 @@ mysql.server start
 brew info mysql
 ```
 
-### Install Other Brew Packages
+### Install MongoDB
+http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/
+```sh
+brew install mongodb
+
+```
+
+### Install MongoDB
 ```sh
 brew install mongodb
 
