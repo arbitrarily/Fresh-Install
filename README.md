@@ -7,36 +7,36 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 
 
 ### Version
-1.0.3
+1.0.4
 
-### Programs
-Programs to install:
+### App Store Programs
+* Airmail
+* Balsamiq Mockups
+* Better Touch Tool
+* CloudApp
+* iPassword
+* Sitesucker
+* The Unarchiver
+* Xcode
+
+### Third Party Programs
 * Adium
 * Adobe Illustrator
 * Adobe Photoshop
-* Airmail
-* Balsamiq Mockups
+* Alfred
 * Bitnami
-* CloudApp
+* Disk Inventory X
 * DropBox
+* Flow
 * Google Chrome
 * Google Drive
+* Growl
+* Hands Off!
 * ImageOptim
-* iPassword
 * iTerm
 * Mozilla Firefox
 * Sequel Pro
 * Sublime Text
-* Xcode
-
-Non Essential:
-* Disk Inventory X
-* Growl
-* Hands Off!
-* OmniGraffle
-* Sourcetree
-* Sitesucker
-* The Unarchiver
 * VirtualBox
 * VLC
 
@@ -109,6 +109,26 @@ git config --global user.name "Name"
 git config --global user.email email@email.com
 git config -l --global
 ```
+
+### Set Up Mac OS X Preferences
+```sh
+# Set a fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 0.02
+
+# Set a shorter delay until key repeat
+defaults write NSGlobalDomain InitialKeyRepeat -int 12
+
+# Add a contextual menu item to show the Web Inspector in web views
+defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
+# Show the ~/Library folder
+chflags nohidden ~/Library
+
+# Store screenshots in subfolder on desktop
+mkdir ~/Desktop/Screenshots
+defaults write com.apple.screencapture location ~/Desktop/Screenshots
+```
+
 
 ### Install Xcode
 https://itunes.apple.com/au/app/xcode/id497799835?mt=12
@@ -236,7 +256,11 @@ export PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]$WHITE\]in \[$GREEN\]\w\[$WHITE\]\
 export PS2="\[$ORANGE\]→ \[$RESET\]"
 
 export PATH=/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:$PATH
+
+# For those used to subl -w
 export EDITOR='subl -w'
+
+# For me
 export EDITOR='subl .'
 ```
 
