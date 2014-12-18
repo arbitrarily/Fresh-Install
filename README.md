@@ -7,38 +7,48 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 
 
 ### Version
-1.0.4
+1.0.5
 
-### App Store Programs
-* Airmail
-* Balsamiq Mockups
-* Better Touch Tool
+### App Store Applications
 * CloudApp
-* iPassword
+* ReadKit
 * Sitesucker
-* The Unarchiver
+* Skitch
 * Xcode
 
-### Third Party Programs
-* Adium
+### Third Party Applications
 * Adobe Illustrator
 * Adobe Photoshop
-* Alfred
+* Balsamiq Mockups
 * Bitnami
+* Bowtie
 * Disk Inventory X
 * DropBox
 * Flow
-* Google Chrome
 * Google Drive
 * Growl
 * Hands Off!
 * ImageOptim
-* iTerm
 * Mozilla Firefox
-* Sequel Pro
-* Sublime Text
-* VirtualBox
-* VLC
+
+### Homebrew Cask Applications
+Adium
+Alfred
+Airmail Beta
+Bartender
+BetterTouchTool
+Bartender
+Google Chrome
+iTerm2
+MacVim
+Mou
+OnePassword
+Sequel Pro
+SourceTree
+Sublime Text
+The Unarchiver
+Virtualbox
+VLC
 
 ### Sublime Text Preferences
 ```sh
@@ -81,6 +91,9 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 }
 ```
 
+### Fonts
+Fonts are Backed up to Dropbox/Resources/Fonts
+
 ### Sublime Text Plugins
 Plugins to install:
 * CSSLint
@@ -107,8 +120,18 @@ ssh -T git@github.com
 ```sh
 git config --global user.name "Name"
 git config --global user.email email@email.com
+git config --global github.user arbitrarily
+git config --global github.token your_token_here
 git config -l --global
+git config --global core.editor "subl ."
+git config --global color.ui true
 ```
+
+### Set Hostname
+```sh
+sudo scutil --set HostName SpaceX-Falcon-9
+```
+
 
 ### Set Up Mac OS X Preferences
 ```sh
@@ -141,6 +164,36 @@ xcode-select --install
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew doctor
+```
+
+### Install Apps Via Homebrew Cask
+```sh
+# Install
+brew install caskroom/cask/brew-cask
+
+# Common Apps
+brew install ack autojump automake colordiff curl git git-flow hub icoutils imagemagick libmemcached memcached openssl ossp-uuid qt readline redis tmux wget libxml2
+
+brew cask install adium
+brew cask install alfred
+brew cask install airmail-beta
+brew cask install bartender
+brew cask install bettertouchtool
+brew cask install bartender
+brew cask install google-chrome
+brew cask install iterm2
+brew cask install macvim
+brew cask install mou
+brew cask install onepassword
+brew cask install sequel-pro
+brew cask install sourcetree
+brew cask install sublime-text
+brew cask install the-unarchiver
+brew cask install virtualbox
+brew cask install vlc
+
+# Install Quick Look Plugins (preview code etc)
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
 ```
 
 ### Install MySQL
@@ -185,6 +238,19 @@ https://rubygems.org/pages/download
 ### Install Python pip
 https://pip.pypa.io/en/latest/installing.html
 ```sh
+
+
+```
+
+### Configure Sublime Text Command Line
+```sh
+mkdir -p ~/bin && ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+```
+
+### Sublime Text 3 Plugin Installer
+Hit Control + ` to access Console.
+```sh
+import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 
 
 ```
@@ -265,3 +331,6 @@ export EDITOR='subl .'
 ```
 
 [Marko Bajlovic]:http://markobajlovic.com/
+
+
+Sourced from all over.
