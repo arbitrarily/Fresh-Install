@@ -7,9 +7,10 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 
 
 ### Version
-1.1.1
+1.1.2
 
 ### App Store Applications
+* Airmail
 * CloudApp
 * ReadKit
 * Sitesucker
@@ -25,7 +26,6 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 * DropBox
 * Flow
 * Google Chrome
-* Growl
 * Hands Off!
 * Mozilla Firefox
 * OnePassword
@@ -33,14 +33,12 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 ### Homebrew Cask Applications
 * Adium
 * Alfred
-* Airmail Beta
 * Bartender
 * BetterTouchTool
 * Bartender
 * Google Chrome
 * iTerm2
 * ImageOptim
-* MacVim
 * Mou
 * OnePassword
 * Sequel Pro
@@ -275,6 +273,11 @@ gem install sass
 https://pip.pypa.io/en/latest/installing.html
 ```sh
 
+### Alfred Cask Link
+```sh
+brew cask alfred link
+
+```
 
 ```
 
