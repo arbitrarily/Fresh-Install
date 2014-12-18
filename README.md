@@ -280,6 +280,29 @@ https://pip.pypa.io/en/latest/installing.html
 
 ```
 
+### Install PEAR/PECL
+http://jason.pureconcepts.net/2012/10/install-pear-pecl-mac-os-x/
+```sh
+
+curl -O http://pear.php.net/go-pear.phar
+sudo php -d detect_unicode=0 go-pear.phar
+
+# Type 1 and press return.
+# Enter:
+
+/usr/local/pear
+
+# Type 4 and press return.
+# Enter:
+
+/usr/local/bin
+
+# Press return
+
+pear version
+
+```
+
 ### Configure Bash & Shortcuts
 ```sh
 #alias for sublime
