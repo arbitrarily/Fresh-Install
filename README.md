@@ -24,7 +24,6 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 * Disk Inventory X
 * DropBox
 * Flow
-* Google Drive
 * Growl
 * Hands Off!
 * Mozilla Firefox
