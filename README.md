@@ -7,7 +7,7 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 
 
 ### Version
-1.0.6
+1.0.8
 
 ### App Store Applications
 * CloudApp
@@ -20,7 +20,6 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 * Adobe Illustrator
 * Adobe Photoshop
 * Balsamiq Mockups
-* Bitnami
 * Bowtie
 * Disk Inventory X
 * DropBox
@@ -106,7 +105,6 @@ Plugins to install:
 * [Post To Tumblr](https://chrome.google.com/webstore/detail/post-to-tumblr/dbpicbbcpanckagpdjflgojlknomoiah)
 * [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm)
 
-
 ### Sublime Text Plugins
 Plugins to install:
 * Alignment
@@ -118,6 +116,17 @@ Plugins to install:
 * SassBeautify
 * SidebarEnhancements
 * Theme - Spacegray Eighties
+
+### Configure Sublime Text Command Line
+```sh
+mkdir -p ~/bin && ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+```
+
+### Sublime Text 3 Plugin Installer
+Hit Control + ` to access Console.
+```sh
+import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+```
 
 ### Set Up SSH Keys
 https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git
@@ -149,9 +158,8 @@ git config --global color.ui true
 
 ### Set Hostname
 ```sh
-sudo scutil --set HostName SpaceX-Falcon-9
+sudo scutil --set HostName CakesMini
 ```
-
 
 ### Set Up Mac OS X Preferences
 ```sh
@@ -250,29 +258,23 @@ brew install mongodb
 
 ```
 
-### Install Ruby gem
+### Install Ruby Gem
 https://rubygems.org/pages/download
 ```sh
+gem update --system
+gem install rubygems-update
+update_rubygems
 
+# Install Gems
+gem install compass
+gem install foundation
+gem install sass
 
 ```
 
 ### Install Python pip
 https://pip.pypa.io/en/latest/installing.html
 ```sh
-
-
-```
-
-### Configure Sublime Text Command Line
-```sh
-mkdir -p ~/bin && ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
-```
-
-### Sublime Text 3 Plugin Installer
-Hit Control + ` to access Console.
-```sh
-import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 
 
 ```
