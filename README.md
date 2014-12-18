@@ -7,7 +7,7 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 
 
 ### Version
-1.0.5
+1.0.6
 
 ### App Store Applications
 * CloudApp
@@ -28,7 +28,6 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 * Google Drive
 * Growl
 * Hands Off!
-* ImageOptim
 * Mozilla Firefox
 
 ### Homebrew Cask Applications
@@ -40,6 +39,7 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 * Bartender
 * Google Chrome
 * iTerm2
+* ImageOptim
 * MacVim
 * Mou
 * OnePassword
@@ -47,6 +47,7 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 * SourceTree
 * Sublime Text
 * The Unarchiver
+* Vagrant
 * Virtualbox
 * VLC
 
@@ -108,8 +109,15 @@ Plugins to install:
 
 ### Sublime Text Plugins
 Plugins to install:
-* CSSLint
-*
+* Alignment
+* Color Highlighter
+* GitGutter
+* HTML-CSS-JS Prettify
+* Monokai Extended
+* Sass
+* SassBeautify
+* SidebarEnhancements
+* Theme - Spacegray Eighties
 
 ### Set Up SSH Keys
 https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git
@@ -193,6 +201,7 @@ brew cask install bartender
 brew cask install bettertouchtool
 brew cask install bartender
 brew cask install google-chrome
+brew cask install imageoptim
 brew cask install iterm2
 brew cask install macvim
 brew cask install mou
@@ -201,6 +210,7 @@ brew cask install sequel-pro
 brew cask install sourcetree
 brew cask install sublime-text
 brew cask install the-unarchiver
+brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
 
