@@ -7,7 +7,7 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 
 
 ### Version
-1.0.9
+1.1.0
 
 ### App Store Applications
 * CloudApp
@@ -24,9 +24,11 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 * Disk Inventory X
 * DropBox
 * Flow
+* Google Chrome
 * Growl
 * Hands Off!
 * Mozilla Firefox
+* OnePassword
 
 ### Homebrew Cask Applications
 * Adium
@@ -206,8 +208,6 @@ brew cask install alfred
 brew cask install appcleaner
 brew cask install bartender
 brew cask install bettertouchtool
-brew cask install bartender
-brew cask install google-chrome
 brew cask install google-drive
 brew cask install imageoptim
 brew cask install iterm2
