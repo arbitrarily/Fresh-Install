@@ -7,7 +7,7 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 
 
 ### Version
-1.0.8
+1.0.9
 
 ### App Store Applications
 * CloudApp
@@ -204,16 +204,16 @@ brew install ack autojump automake colordiff curl git git-flow hub icoutils imag
 
 brew cask install adium
 brew cask install alfred
-brew cask install airmail-beta
+brew cask install appcleaner
 brew cask install bartender
 brew cask install bettertouchtool
 brew cask install bartender
 brew cask install google-chrome
+brew cask install google-drive
 brew cask install imageoptim
 brew cask install iterm2
 brew cask install macvim
 brew cask install mou
-brew cask install onepassword
 brew cask install sequel-pro
 brew cask install sourcetree
 brew cask install sublime-text
