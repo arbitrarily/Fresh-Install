@@ -7,23 +7,21 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 
 
 ### Version
-1.1.2
+1.1.3
 
 ### App Store Applications
 * Airmail
 * CloudApp
 * ReadKit
-* Sitesucker
-* Skitch
 * Xcode
 
 ### Third Party Applications
+I install my broswers and OnePassword normally so they link properly.
 * Adobe Illustrator
 * Adobe Photoshop
 * Balsamiq Mockups
 * Bowtie
 * Disk Inventory X
-* DropBox
 * Flow
 * Google Chrome
 * Hands Off!
@@ -36,6 +34,7 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 * Bartender
 * BetterTouchTool
 * Bartender
+* Dropbox
 * Google Chrome
 * iTerm2
 * ImageOptim
@@ -94,7 +93,7 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 Fonts are Backed up to Dropbox/Resources/Fonts
 
 ### Google Chrome Plugins
-Plugins to install:
+Plugins are synced to Chrome but in case:
 * [Adblock Plus](https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb)
 * [Google Drive](https://chrome.google.com/webstore/detail/google-drive/apdfllckaahabafndbhieahigkjlhalf)
 * [Hover Zoom](https://chrome.google.com/webstore/detail/hover-zoom/nonjdcjchghhkdoolnlbekcfllmednbl)
@@ -103,18 +102,6 @@ Plugins to install:
 * [Postman REST Client](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm)
 * [Post To Tumblr](https://chrome.google.com/webstore/detail/post-to-tumblr/dbpicbbcpanckagpdjflgojlknomoiah)
 * [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm)
-
-### Sublime Text Plugins
-Plugins to install:
-* Alignment
-* Color Highlighter
-* GitGutter
-* HTML-CSS-JS Prettify
-* Monokai Extended
-* Sass
-* SassBeautify
-* SidebarEnhancements
-* Theme - Spacegray Eighties
 
 ### Configure Sublime Text Command Line
 ```sh
@@ -126,6 +113,18 @@ Hit Control + ` to access Console.
 ```sh
 import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 ```
+
+### Sublime Text Plugins
+Plugins to install via Package Control:
+* Alignment
+* Color Highlighter
+* GitGutter
+* HTML-CSS-JS Prettify
+* Monokai Extended
+* Sass
+* SassBeautify
+* SidebarEnhancements
+* Theme - Spacegray Eighties
 
 ### Set Up SSH Keys
 https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git
@@ -179,7 +178,6 @@ mkdir ~/Desktop/Screenshots
 defaults write com.apple.screencapture location ~/Desktop/Screenshots
 ```
 
-
 ### Install Xcode
 https://itunes.apple.com/au/app/xcode/id497799835?mt=12
 ```sh
@@ -206,6 +204,7 @@ brew cask install alfred
 brew cask install appcleaner
 brew cask install bartender
 brew cask install bettertouchtool
+brew cask install dropbox
 brew cask install google-drive
 brew cask install imageoptim
 brew cask install iterm2
@@ -221,6 +220,12 @@ brew cask install vlc
 
 # Install Quick Look Plugins (preview code etc)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
+```
+
+### Alfred Cask Link
+```sh
+brew cask alfred link
+
 ```
 
 ### Install MySQL
@@ -272,12 +277,6 @@ gem install sass
 ### Install Python pip
 https://pip.pypa.io/en/latest/installing.html
 ```sh
-
-```
-
-### Alfred Cask Link
-```sh
-brew cask alfred link
 
 ```
 
