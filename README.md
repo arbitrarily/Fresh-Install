@@ -7,7 +7,7 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 
 
 ### Version
-1.1.0
+1.1.1
 
 ### App Store Applications
 * CloudApp
@@ -60,7 +60,7 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
+	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
 	"detect_indentation": true,
 	"fade_fold_buttons": true,
 	"folder_exclude_patterns":
