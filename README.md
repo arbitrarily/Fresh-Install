@@ -7,7 +7,7 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 
 
 ### Version
-1.1.3
+1.1.4
 
 ### App Store Applications
 * Airmail
@@ -254,12 +254,6 @@ brew install mongodb
 
 ```
 
-### Install MongoDB
-```sh
-brew install mongodb
-
-```
-
 ### Install Ruby Gem
 https://rubygems.org/pages/download
 ```sh
@@ -302,6 +296,19 @@ sudo php -d detect_unicode=0 go-pear.phar
 pear version
 
 ```
+
+### Install PHP Mongo
+```sh
+
+# Install Mongo
+sudo pecl install mongo
+
+sudo cp /etc/php.ini.default /etc/php.ini
+sudo chmod 644 /etc/php.ini
+echo "extension=mongo.so" >> /etc/php.ini
+
+```
+
 
 ### Configure Bash & Shortcuts
 ```sh
