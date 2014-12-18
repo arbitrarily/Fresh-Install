@@ -32,23 +32,23 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 * Mozilla Firefox
 
 ### Homebrew Cask Applications
-Adium
-Alfred
-Airmail Beta
-Bartender
-BetterTouchTool
-Bartender
-Google Chrome
-iTerm2
-MacVim
-Mou
-OnePassword
-Sequel Pro
-SourceTree
-Sublime Text
-The Unarchiver
-Virtualbox
-VLC
+* Adium
+* Alfred
+* Airmail Beta
+* Bartender
+* BetterTouchTool
+* Bartender
+* Google Chrome
+* iTerm2
+* MacVim
+* Mou
+* OnePassword
+* Sequel Pro
+* SourceTree
+* Sublime Text
+* The Unarchiver
+* Virtualbox
+* VLC
 
 ### Sublime Text Preferences
 ```sh
@@ -93,6 +93,18 @@ VLC
 
 ### Fonts
 Fonts are Backed up to Dropbox/Resources/Fonts
+
+### Google Chrome Plugins
+Plugins to install:
+* [Adblock Plus](https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb)
+* [Google Drive](https://chrome.google.com/webstore/detail/google-drive/apdfllckaahabafndbhieahigkjlhalf)
+* [Hover Zoom](https://chrome.google.com/webstore/detail/hover-zoom/nonjdcjchghhkdoolnlbekcfllmednbl)
+* [Instapaper](https://chrome.google.com/webstore/detail/instapaper/ldjkgaaoikpmhmkelcgkgacicjfbofhh)
+* [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
+* [Postman REST Client](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm)
+* [Post To Tumblr](https://chrome.google.com/webstore/detail/post-to-tumblr/dbpicbbcpanckagpdjflgojlknomoiah)
+* [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm)
+
 
 ### Sublime Text Plugins
 Plugins to install:
