@@ -7,7 +7,7 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 
 
 ### Version
-1.1.4
+1.1.5
 
 ### App Store Applications
 * Airmail
@@ -125,6 +125,9 @@ Plugins to install via Package Control:
 * SassBeautify
 * SidebarEnhancements
 * Theme - Spacegray Eighties
+
+### iTerm Colors
+https://github.com/mbadolato/iTerm2-Color-Schemes
 
 ### Set Up SSH Keys
 https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git
