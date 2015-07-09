@@ -7,7 +7,7 @@ The following is a guide I wrote to guide one through a fresh installation on a 
 
 
 ### Version
-1.1.5
+1.1.6
 
 ### App Store Applications
 * Airmail
@@ -48,46 +48,14 @@ I install my broswers and OnePassword normally so they link properly.
 * Virtualbox
 * VLC
 
+### .vimrc
+https://github.com/arbitrarily/vimrc
+
+### .bash_profile
+https://github.com/arbitrarily/bash_profile
+
 ### Sublime Text Preferences
-```sh
-{
-	"auto_complete": true,
-	"auto_complete_commit_on_tab": true,
-	"auto_complete_with_fields": true,
-	"bold_folder_labels": true,
-	"caret_style": "phase",
-	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
-	"detect_indentation": true,
-	"fade_fold_buttons": true,
-	"folder_exclude_patterns":
-	[
-		".svn",
-		".git",
-		".hg",
-		"CVS",
-		"tmp",
-		".bundle",
-		".sass-cache"
-	],
-	"font_size": 12.0,
-	"gutter": true,
-	"highlight_line": true,
-	"highlight_modified_tabs": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"line_padding_bottom": 1,
-	"line_padding_top": 1,
-	"soda_classic_tabs": false,
-	"soda_folder_icons": false,
-	"theme": "Spacegray Eighties.sublime-theme",
-	"trim_trailing_white_space_on_save": true,
-	"use_tab_stops": true,
-	"word_wrap": true
-}
-```
+https://github.com/arbitrarily/sublime-settings
 
 ### Fonts
 Fonts are Backed up to Dropbox/Resources/Fonts
@@ -102,6 +70,8 @@ Plugins are synced to Chrome but in case:
 * [Postman REST Client](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm)
 * [Post To Tumblr](https://chrome.google.com/webstore/detail/post-to-tumblr/dbpicbbcpanckagpdjflgojlknomoiah)
 * [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm)
+* [Ghostery](https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij)
+* [Pivotate](https://chrome.google.com/webstore/detail/pivotate-v5/eljfphonhnilcfpkbdhigiahjpcbecic)
 
 ### Configure Sublime Text Command Line
 ```sh
@@ -130,9 +100,11 @@ Plugins to install via Package Control:
 https://github.com/mbadolato/iTerm2-Color-Schemes
 
 ### Set Up SSH Keys
+```
 https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git
 https://help.github.com/articles/generating-ssh-keys/
 ```sh
+
 # check if installed
 ls -al ~/.ssh
 
@@ -194,7 +166,19 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew doctor
 ```
 
+### Install PHP from Homebrew
+```sh
+https://github.com/Homebrew/homebrew-php
+
+brew tap homebrew/dupes
+brew tap homebrew/versions
+brew tap homebrew/homebrew-php
+brew install php56
+
+```
+
 ### Install Apps Via Homebrew Cask
+
 ```sh
 # Install
 brew install caskroom/cask/brew-cask
