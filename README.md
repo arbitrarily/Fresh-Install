@@ -2,51 +2,58 @@
 
 The following is a guide I wrote to guide one through a fresh installation on a new machine. Enjoy!
 
+Quote time:
+
 > “To be in hell is to drift; to be in heaven is to steer.”
 ― George Bernard Shaw
 
 
 ### Version
-1.1.6
+1.2.1
 
 ### App Store Applications
 * Airmail
 * CloudApp
-* ReadKit
 * Xcode
+* Tweetbot
 
 ### Third Party Applications
-I install my broswers and OnePassword normally so they link properly.
+I install my browers and OnePassword normally so they link properly.
 * Adobe Illustrator
 * Adobe Photoshop
 * Balsamiq Mockups
 * Bowtie
-* Disk Inventory X
-* Flow
-* Google Chrome
-* Hands Off!
-* Mozilla Firefox
-* OnePassword
+* Feeds
+* Google Chrome Canary
 
 ### Homebrew Cask Applications
-* Adium
+* Arduino
+* Airserver
 * Alfred
+* AppCleaner
 * Bartender
 * BetterTouchTool
 * Bartender
+* CleanMyMac
+* Cyberduck
 * Dropbox
+* Firefox
 * Google Chrome
+* Grand Perspective
+* Hands Off!
+* Helium
 * iTerm2
 * ImageOptim
+* Kaleidoscope
 * Mou
 * OnePassword
-* Sequel Pro
-* SourceTree
+* Querious
+* Slack
 * Sublime Text
 * The Unarchiver
-* Vagrant
-* Virtualbox
+* Tower
 * VLC
+* Vox
 
 ### .vimrc
 https://github.com/arbitrarily/vimrc
@@ -63,15 +70,15 @@ Fonts are Backed up to Dropbox/Resources/Fonts
 ### Google Chrome Plugins
 Plugins are synced to Chrome but in case:
 * [Adblock Plus](https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb)
-* [Google Drive](https://chrome.google.com/webstore/detail/google-drive/apdfllckaahabafndbhieahigkjlhalf)
+* [Ghostery](https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij)
+* [Google Art Project](https://chrome.google.com/webstore/detail/google-art-project/akimgimeeoiognljlfchpbkpfbmeapkh)
 * [Hover Zoom](https://chrome.google.com/webstore/detail/hover-zoom/nonjdcjchghhkdoolnlbekcfllmednbl)
-* [Instapaper](https://chrome.google.com/webstore/detail/instapaper/ldjkgaaoikpmhmkelcgkgacicjfbofhh)
+* [Instapaper](https://chrome.google.com/webstore/detail/instapaper/ldjkgaaoikpmhmkelcgkgacicjfbofhh) 
 * [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
 * [Postman REST Client](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm)
 * [Post To Tumblr](https://chrome.google.com/webstore/detail/post-to-tumblr/dbpicbbcpanckagpdjflgojlknomoiah)
 * [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm)
-* [Ghostery](https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij)
-* [Pivotate](https://chrome.google.com/webstore/detail/pivotate-v5/eljfphonhnilcfpkbdhigiahjpcbecic)
+
 
 ### Configure Sublime Text Command Line
 ```sh
@@ -87,14 +94,22 @@ import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330
 ### Sublime Text Plugins
 Plugins to install via Package Control:
 * Alignment
+* ApacheConf.tmLanguage
+* BracketHighlighter
 * Color Highlighter
+* EditorConfig
 * GitGutter
 * HTML-CSS-JS Prettify
 * Monokai Extended
+* PHP Syntax Checker
 * Sass
 * SassBeautify
 * SidebarEnhancements
-* Theme - Spacegray Eighties
+* SublimeLinter
+* SublimeLinter-csslint
+* SublimeLinter-jshint
+* SublimeLinter-json
+* Theme - Spacegray
 
 ### iTerm Colors
 https://github.com/mbadolato/iTerm2-Color-Schemes
@@ -174,36 +189,21 @@ brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/homebrew-php
 brew install php56
+brew install php56-mycrypt
 
 ```
 
 ### Install Apps Via Homebrew Cask
 
 ```sh
-# Install
+# Install Brew Cask
 brew install caskroom/cask/brew-cask
 
-# Common Apps
+# Common Programs
 brew install ack autojump automake colordiff curl git git-flow hub icoutils imagemagick libmemcached memcached openssl ossp-uuid qt readline redis tmux wget libxml2
 
-brew cask install adium
-brew cask install alfred
-brew cask install appcleaner
-brew cask install bartender
-brew cask install bettertouchtool
-brew cask install dropbox
-brew cask install google-drive
-brew cask install imageoptim
-brew cask install iterm2
-brew cask install macvim
-brew cask install mou
-brew cask install sequel-pro
-brew cask install sourcetree
-brew cask install sublime-text
-brew cask install the-unarchiver
-brew cask install vagrant
-brew cask install virtualbox
-brew cask install vlc
+# Cask Applications
+brew cask install 1password airserver alfred appcleaner arduino bartender bettertouchtool bartender cleanmymac cyberduck dropbox firefox google-chrome grandperspective hands-off helium iterm2 imageoptim kaleidoscope mou querious slack sublime-text the-unarchiver tower vlc vox vox-preference-pane
 
 # Install Quick Look Plugins (preview code etc)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
@@ -296,81 +296,6 @@ echo "extension=mongo.so" >> /etc/php.ini
 
 ```
 
-
-### Configure Bash & Shortcuts
-```sh
-#alias for sublime
-alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-
-alias lexi='cd /Users/arbitrarily/Git/lexichronic-three/'
-alias lexisass='cd /Users/arbitrarily/Git/lexichronic-three/wp-content/themes/lexichronic/grunt/'
-alias f35='cd /Users/arbitrarily/Git/f35-elitedaily/'
-alias f35sass='cd /Users/arbitrarily/Git/f35-elitedaily/f35elitedaily/wordpress/wp-content/themes/strangelove/source/src/'
-alias eat='cd /Users/arbitrarily/Git/willmcavoy/public'
-alias eatsass='cd /Users/arbitrarily/Git/willmcavoy/public/wp-content/themes/newsroom/source/'
-
-export PATH=/usr/local/bin:$PATH
-
-if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
-        export TERM=gnome-256color
-elif infocmp xterm-256color >/dev/null 2>&1; then
-        export TERM=xterm-256color
-fi
-
-if tput setaf 1 &> /dev/null; then
-        tput sgr0
-        if [[ $(tput colors) -ge 256 ]] 2>/dev/null; then
-                MAGENTA=$(tput setaf 9)
-                ORANGE=$(tput setaf 172)
-                GREEN=$(tput setaf 190)
-                PURPLE=$(tput setaf 141)
-                WHITE=$(tput setaf 7)
-        else
-                MAGENTA=$(tput setaf 5)
-                ORANGE=$(tput setaf 4)
-                GREEN=$(tput setaf 2)
-                PURPLE=$(tput setaf 1)
-                WHITE=$(tput setaf 7)
-        fi
-        BOLD=$(tput bold)
-        RESET=$(tput sgr0)
-else
-        MAGENTA="\033[1;31m"
-        ORANGE="\033[1;33m"
-        GREEN="\033[1;32m"
-        PURPLE="\033[1;35m"
-        WHITE="\033[1;37m"
-        BOLD=""
-        RESET="\033[m"
-fi
-
-export MAGENTA
-export ORANGE
-export GREEN
-export PURPLE
-export WHITE
-export BOLD
-export RESET
-
-function parse_git_dirty() {
-        [[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
-}
-
-function parse_git_branch() {
-        git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
-}
-
-export PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
-export PS2="\[$ORANGE\]→ \[$RESET\]"
-
-export PATH=/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:$PATH
-
-# For those used to subl -w
-export EDITOR='subl -w'
-
-# For me
-export EDITOR='subl .'
-```
 
 [Marko Bajlovic]:http://markobajlovic.com/
 
