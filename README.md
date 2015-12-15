@@ -9,13 +9,15 @@ Quote time:
 
 
 ### Version
-1.2.1
+1.2.2
 
 ### App Store Applications
 * Airmail
 * CloudApp
-* Xcode
+* Sunrise Calendar
 * Tweetbot
+* Quiver
+* Xcode
 
 ### Third Party Applications
 I install my browers and OnePassword normally so they link properly.
@@ -33,11 +35,11 @@ I install my browers and OnePassword normally so they link properly.
 * AppCleaner
 * Bartender
 * BetterTouchTool
-* Bartender
 * CleanMyMac
 * Cyberduck
 * Dropbox
 * Firefox
+* Flux
 * Google Chrome
 * Grand Perspective
 * Hands Off!
@@ -252,12 +254,6 @@ update_rubygems
 gem install compass
 gem install foundation
 gem install sass
-
-```
-
-### Install Python pip
-https://pip.pypa.io/en/latest/installing.html
-```sh
 
 ```
 
