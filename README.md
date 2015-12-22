@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.2.2
+1.2.3
 
 ### App Store Applications
 * Airmail
@@ -168,6 +168,7 @@ chflags nohidden ~/Library
 # Store screenshots in subfolder on desktop
 mkdir ~/Desktop/Screenshots
 defaults write com.apple.screencapture location ~/Desktop/Screenshots
+killall SystemUIServer
 ```
 
 ### Install Xcode
@@ -292,8 +293,6 @@ echo "extension=mongo.so" >> /etc/php.ini
 
 ```
 
-
 [Marko Bajlovic]:http://markobajlovic.com/
-
 
 Sourced from all over.
