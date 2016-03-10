@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.2.3
+1.2.4
 
 ### App Store Applications
 * Airmail
@@ -20,7 +20,6 @@ Quote time:
 * Xcode
 
 ### Third Party Applications
-I install my browers and OnePassword normally so they link properly.
 * Adobe Illustrator
 * Adobe Photoshop
 * Balsamiq Mockups
@@ -36,7 +35,6 @@ I install my browers and OnePassword normally so they link properly.
 * Bartender
 * BetterTouchTool
 * CleanMyMac
-* Cyberduck
 * Dropbox
 * Firefox
 * Flux
@@ -54,6 +52,7 @@ I install my browers and OnePassword normally so they link properly.
 * Sublime Text
 * The Unarchiver
 * Tower
+* Transmit
 * VLC
 * Vox
 
@@ -78,7 +77,7 @@ Plugins are synced to Chrome but in case:
 * [Instapaper](https://chrome.google.com/webstore/detail/instapaper/ldjkgaaoikpmhmkelcgkgacicjfbofhh) 
 * [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
 * [Postman REST Client](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm)
-* [Post To Tumblr](https://chrome.google.com/webstore/detail/post-to-tumblr/dbpicbbcpanckagpdjflgojlknomoiah)
+* [Privacy Badger](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp)
 * [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm)
 
 
@@ -148,7 +147,7 @@ git config --global color.ui true
 
 ### Set Hostname
 ```sh
-sudo scutil --set HostName CakesMini
+sudo scutil --set HostName ###
 ```
 
 ### Set Up Mac OS X Preferences
