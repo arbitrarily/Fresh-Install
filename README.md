@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.2.6
+1.2.7
 
 ### App Store Applications
 * Airmail
@@ -98,6 +98,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # Make Default Shell 
 chsh -s $(which zsh)
 ```
+
+### Install Honukai Zsh Theme
+https://github.com/arbitrarily/honukai-iterm-zsh
+~~https://github.com/oskarkrawczyk/honukai-iterm-zsh~~
 
 ### Sublime Text 3 Plugin Installer
 Hit Control + ` to access Console.
