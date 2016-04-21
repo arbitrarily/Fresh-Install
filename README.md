@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.2.4
+1.2.5
 
 ### App Store Applications
 * Airmail
@@ -59,6 +59,9 @@ Quote time:
 ### .vimrc
 https://github.com/arbitrarily/vimrc
 
+### .zshrc
+https://github.com/arbitrarily/zshrc
+
 ### .bash_profile
 https://github.com/arbitrarily/bash_profile
 
@@ -84,6 +87,15 @@ Plugins are synced to Chrome but in case:
 ### Configure Sublime Text Command Line
 ```sh
 mkdir -p ~/bin && ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+```
+
+### zsh 
+```sh
+sudo apt-get install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Make Default Shell 
+chsh -s $(which zsh)
 ```
 
 ### Sublime Text 3 Plugin Installer
