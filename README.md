@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.2.7
+1.2.9
 
 ### App Store Applications
 * Airmail
@@ -99,10 +99,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 chsh -s $(which zsh)
 ```
 
-### Install Honukai Zsh Theme
-https://github.com/arbitrarily/honukai-iterm-zsh
-~~https://github.com/oskarkrawczyk/honukai-iterm-zsh~~
-
 ### Sublime Text 3 Plugin Installer
 Hit Control + ` to access Console.
 ```sh
@@ -133,10 +129,10 @@ Plugins to install via Package Control:
 https://github.com/mbadolato/iTerm2-Color-Schemes
 
 ### Set Up SSH Keys
-```
+```sh
 https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git
 https://help.github.com/articles/generating-ssh-keys/
-```sh
+```
 
 # check if installed
 ls -al ~/.ssh
