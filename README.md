@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.2.5
+1.2.6
 
 ### App Store Applications
 * Airmail
@@ -91,7 +91,8 @@ mkdir -p ~/bin && ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/b
 
 ### zsh 
 ```sh
-sudo apt-get install zsh
+# sudo apt-get install zsh
+brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Make Default Shell 
