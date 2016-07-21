@@ -9,12 +9,10 @@ Quote time:
 
 
 ### Version
-1.2.9
+1.2.10
 
 ### App Store Applications
 * Airmail
-* CloudApp
-* Sunrise Calendar
 * Tweetbot
 * Quiver
 * Xcode
@@ -23,15 +21,14 @@ Quote time:
 * Adobe Illustrator
 * Adobe Photoshop
 * Balsamiq Mockups
-* Bowtie
 * Feeds
+* Franz
 * Google Chrome Canary
 
 ### Homebrew Cask Applications
 * Arduino
 * Airserver
 * Alfred
-* AppCleaner
 * Bartender
 * BetterTouchTool
 * CleanMyMac
@@ -48,7 +45,6 @@ Quote time:
 * Mou
 * OnePassword
 * Querious
-* Slack
 * Sublime Text
 * The Unarchiver
 * Tower
@@ -69,20 +65,7 @@ https://github.com/arbitrarily/bash_profile
 https://github.com/arbitrarily/sublime-settings
 
 ### Fonts
-Fonts are Backed up to Dropbox/Resources/Fonts
-
-### Google Chrome Plugins
-Plugins are synced to Chrome but in case:
-* [Adblock Plus](https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb)
-* [Ghostery](https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij)
-* [Google Art Project](https://chrome.google.com/webstore/detail/google-art-project/akimgimeeoiognljlfchpbkpfbmeapkh)
-* [Hover Zoom](https://chrome.google.com/webstore/detail/hover-zoom/nonjdcjchghhkdoolnlbekcfllmednbl)
-* [Instapaper](https://chrome.google.com/webstore/detail/instapaper/ldjkgaaoikpmhmkelcgkgacicjfbofhh) 
-* [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
-* [Postman REST Client](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm)
-* [Privacy Badger](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp)
-* [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm)
-
+Fonts are Backed up to Dropbox/Resources/
 
 ### Configure Sublime Text Command Line
 ```sh
@@ -108,7 +91,6 @@ import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330
 ### Sublime Text Plugins
 Plugins to install via Package Control:
 * Alignment
-* ApacheConf.tmLanguage
 * BracketHighlighter
 * Color Highlighter
 * EditorConfig
@@ -117,12 +99,7 @@ Plugins to install via Package Control:
 * Monokai Extended
 * PHP Syntax Checker
 * Sass
-* SassBeautify
-* SidebarEnhancements
-* SublimeLinter
-* SublimeLinter-csslint
-* SublimeLinter-jshint
-* SublimeLinter-json
+* SidebarEnhancer
 * Theme - Spacegray
 
 ### iTerm Colors
@@ -218,7 +195,7 @@ brew install caskroom/cask/brew-cask
 brew install ack autojump automake colordiff curl git git-flow hub icoutils imagemagick libmemcached memcached openssl ossp-uuid qt readline redis tmux wget libxml2
 
 # Cask Applications
-brew cask install 1password airserver alfred appcleaner arduino bartender bettertouchtool bartender cleanmymac cyberduck dropbox firefox google-chrome grandperspective hands-off helium iterm2 imageoptim kaleidoscope mou querious slack sublime-text the-unarchiver tower vlc vox vox-preference-pane
+brew cask install 1password airserver alfred arduino bartender bettertouchtool cleanmymac dropbox firefox google-chrome grandperspective hands-off helium iterm2 imageoptim kaleidoscope mou querious sublime-text the-unarchiver tower vlc vox vox-preference-pane
 
 # Install Quick Look Plugins (preview code etc)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
