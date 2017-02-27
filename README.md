@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.2.10
+1.2.11
 
 ### App Store Applications
 * Airmail
@@ -27,7 +27,6 @@ Quote time:
 
 ### Homebrew Cask Applications
 * Arduino
-* Airserver
 * Alfred
 * Bartender
 * BetterTouchTool
@@ -42,6 +41,7 @@ Quote time:
 * iTerm2
 * ImageOptim
 * Kaleidoscope
+* Kodi
 * Mou
 * OnePassword
 * Querious
@@ -155,8 +155,8 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 chflags nohidden ~/Library
 
 # Store screenshots in subfolder on desktop
-mkdir ~/Desktop/Screenshots
-defaults write com.apple.screencapture location ~/Desktop/Screenshots
+mkdir ~/Documents/Screenshots
+defaults write com.apple.screencapture location ~/Documents/Screenshots
 killall SystemUIServer
 ```
 
@@ -195,7 +195,7 @@ brew install caskroom/cask/brew-cask
 brew install ack autojump automake colordiff curl git git-flow hub icoutils imagemagick libmemcached memcached openssl ossp-uuid qt readline redis tmux wget libxml2
 
 # Cask Applications
-brew cask install 1password airserver alfred arduino bartender bettertouchtool cleanmymac dropbox firefox google-chrome grandperspective hands-off helium iterm2 imageoptim kaleidoscope mou querious sublime-text the-unarchiver tower vlc vox vox-preference-pane
+brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac dropbox firefox google-chrome grandperspective hands-off helium iterm2 imageoptim kaleidoscope mou querious sublime-text the-unarchiver tower vlc vox vox-preference-pane
 
 # Install Quick Look Plugins (preview code etc)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
