@@ -9,21 +9,21 @@ Quote time:
 
 
 ### Version
-1.2.11
+1.2.12
 
 ### App Store Applications
 * Airmail
-* Tweetbot
 * Quiver
 * Xcode
 
 ### Third Party Applications
 * Adobe Illustrator
 * Adobe Photoshop
+* Adobe InDesign
 * Balsamiq Mockups
-* Feeds
 * Franz
 * Google Chrome Canary
+* Microsoft Word
 
 ### Homebrew Cask Applications
 * Arduino
@@ -33,7 +33,6 @@ Quote time:
 * CleanMyMac
 * Dropbox
 * Firefox
-* Flux
 * Google Chrome
 * Grand Perspective
 * Hands Off!
@@ -42,7 +41,6 @@ Quote time:
 * ImageOptim
 * Kaleidoscope
 * Kodi
-* Mou
 * OnePassword
 * Querious
 * Sublime Text
@@ -91,15 +89,17 @@ import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330
 ### Sublime Text Plugins
 Plugins to install via Package Control:
 * Alignment
+* Better JavaScript
 * BracketHighlighter
 * Color Highlighter
 * EditorConfig
 * GitGutter
 * HTML-CSS-JS Prettify
 * Monokai Extended
-* PHP Syntax Checker
+* Pretty JSON
 * Sass
 * SidebarEnhancer
+* SublimeCodeIntel
 * Theme - Spacegray
 
 ### iTerm Colors
@@ -171,6 +171,14 @@ xcode-select --install
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew doctor
+```
+
+### Install Python 3
+```sh
+http://python-guide-pt-br.readthedocs.io/en/latest/starting/install3/osx/
+
+brew install python3
+# python3 for python3 command line
 ```
 
 ### Install PHP from Homebrew
@@ -282,6 +290,6 @@ echo "extension=mongo.so" >> /etc/php.ini
 
 ```
 
-[Marko Bajlovic]:http://markobajlovic.com/
+[Marko Bajlovic]:http://marko.tech
 
 Sourced from all over.
