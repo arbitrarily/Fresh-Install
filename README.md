@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.2.12
+1.2.13
 
 ### App Store Applications
 * Airmail
@@ -27,12 +27,14 @@ Quote time:
 
 ### Homebrew Cask Applications
 * Arduino
-* Alfred
+* Alfred 3
 * Bartender
 * BetterTouchTool
+* Boom 2
+* CameraBag 2
 * CleanMyMac
 * Dropbox
-* Firefox
+* Firefox Developer Edition
 * Google Chrome
 * Grand Perspective
 * Hands Off!
@@ -42,12 +44,12 @@ Quote time:
 * Kaleidoscope
 * Kodi
 * OnePassword
+* PoEdit
 * Querious
 * Sublime Text
 * The Unarchiver
 * Tower
 * Transmit
-* VLC
 * Vox
 
 ### .vimrc
@@ -89,17 +91,24 @@ import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330
 ### Sublime Text Plugins
 Plugins to install via Package Control:
 * Alignment
+* All Autocomplete
+* Babel
 * Better JavaScript
 * BracketHighlighter
 * Color Highlighter
-* EditorConfig
 * GitGutter
 * HTML-CSS-JS Prettify
+* Modific
 * Monokai Extended
 * Pretty JSON
 * Sass
+* SassBeautify
 * SidebarEnhancer
 * SublimeCodeIntel
+* SublimeLinter
+* SublimeLinter-csslint
+* SublimeLinter-jshint
+* SublimeLinter-pylint
 * Theme - Spacegray
 
 ### iTerm Colors
@@ -203,7 +212,7 @@ brew install caskroom/cask/brew-cask
 brew install ack autojump automake colordiff curl git git-flow hub icoutils imagemagick libmemcached memcached openssl ossp-uuid qt readline redis tmux wget libxml2
 
 # Cask Applications
-brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac dropbox firefox google-chrome grandperspective hands-off helium iterm2 imageoptim kaleidoscope mou querious sublime-text the-unarchiver tower vlc vox vox-preference-pane
+brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac dropbox firefoxdeveloperedition google-chrome grandperspective hands-off helium iterm2 imageoptim kaleidoscope querious sublime-text the-unarchiver tower vox vox-preference-pane
 
 # Install Quick Look Plugins (preview code etc)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
