@@ -105,10 +105,6 @@ Plugins to install via Package Control:
 * SassBeautify
 * SidebarEnhancer
 * SublimeCodeIntel
-* SublimeLinter
-* SublimeLinter-csslint
-* SublimeLinter-jshint
-* SublimeLinter-pylint
 * Theme - Spacegray
 
 ### iTerm Colors
