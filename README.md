@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.2.14
+1.2.15
 
 ### App Store Applications
 * Airmail
