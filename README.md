@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.2.13
+1.2.14
 
 ### App Store Applications
 * Airmail
@@ -23,7 +23,7 @@ Quote time:
 * Balsamiq Mockups
 * Franz
 * Google Chrome Canary
-* Microsoft Word
+* VS Code
 
 ### Homebrew Cask Applications
 * Arduino
@@ -36,7 +36,6 @@ Quote time:
 * Dropbox
 * Firefox Developer Edition
 * Google Chrome
-* Grand Perspective
 * Hands Off!
 * Helium
 * iTerm2
@@ -64,6 +63,9 @@ https://github.com/arbitrarily/bash_profile
 ### Sublime Text Preferences
 https://github.com/arbitrarily/sublime-settings
 
+### VS Code Preferences
+https://github.com/arbitrarily/vs-code-settings
+
 ### Fonts
 Fonts are Backed up to Dropbox/Resources/
 
@@ -72,13 +74,13 @@ Fonts are Backed up to Dropbox/Resources/
 mkdir -p ~/bin && ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 ```
 
-### zsh 
+### zsh
 ```sh
 # sudo apt-get install zsh
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# Make Default Shell 
+# Make Default Shell
 chsh -s $(which zsh)
 ```
 
@@ -155,7 +157,7 @@ sudo scutil --set HostName ###
 defaults write NSGlobalDomain KeyRepeat -int 0.02
 
 # Set a shorter delay until key repeat
-defaults write NSGlobalDomain InitialKeyRepeat -int 12
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Add a contextual menu item to show the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
@@ -165,8 +167,21 @@ chflags nohidden ~/Library
 
 # Store screenshots in subfolder on desktop
 mkdir ~/Documents/Screenshots
-defaults write com.apple.screencapture location ~/Documents/Screenshots
+defaults write com.apple.screencapture location ~/Screenshots
 killall SystemUIServer
+
+# Add Message to Login Screen
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "In case of loss, please call 201-658-3842."
+
+# Enable Text Selection in QuickLook
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
+
+# Faster Dock Animation
+defaults write com.apple.dock autohide-time-modifier -float 0.2; killall Dock;
+
+# Dull Hidden Apps in Dock
+defaults write com.apple.Dock showhidden -bool TRUE; killall Dock
+
 ```
 
 ### Install Xcode
