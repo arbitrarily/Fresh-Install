@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.2.15
+1.2.16
 
 ### App Store Applications
 * Airmail
@@ -109,6 +109,38 @@ Plugins to install via Package Control:
 * SublimeCodeIntel
 * Theme - Spacegray
 
+### VS Code Plugins
+* Auto Close Tag
+* Babel ES6/ES7
+* Debugger for Chrome
+* ESLint
+* Git Lens
+* gitignore
+* gitlink
+* HTML CSS Support
+* IntelliSense for CSS Classes
+* Javascript (ES6) Code Snippets
+* JSHint
+* JSX
+* MagicPython
+* Node Debug 2
+* npm
+* npm intellisense
+* One Monokai Theme
+* Output Colorizer
+* PHP Debug
+* PHP Extension Pack
+* PHP IntelliSense
+* Python
+* Python for VSCode
+* React Native Tools
+* SCSS IntelliSense
+* scss-lint
+* Sublime Duplicate Text
+* Sublime Text Keymap
+* SVG Viewer
+* VSCode Great Icons
+
 ### iTerm Colors
 https://github.com/mbadolato/iTerm2-Color-Schemes
 
@@ -167,16 +199,20 @@ defaults write com.apple.screencapture location ~/Screenshots
 killall SystemUIServer
 
 # Add Message to Login Screen
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "In case of loss, please call 201-658-3842."
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "In case of loss, please call 201-658-3842"
 
 # Enable Text Selection in QuickLook
 defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
 
 # Faster Dock Animation
-defaults write com.apple.dock autohide-time-modifier -float 0.2; killall Dock;
+defaults write com.apple.dock autohide-time-modifier -float 0.2; killall Dock
 
 # Dull Hidden Apps in Dock
 defaults write com.apple.Dock showhidden -bool TRUE; killall Dock
+
+# Recents & Favorites in Dock (Favorite Items & Recent Docs)
+defaults write com.apple.dock persistent-others -array-add '{ "tile-data" = { "list-type" = 1; }; "tile-type" = "recents-tile"; }'; killall Dock
+defaults write com.apple.dock persistent-others -array-add '{ "tile-data" = { "list-type" = 1; }; "tile-type" = "recents-tile"; }'; killall Dock
 
 ```
 
