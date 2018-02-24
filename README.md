@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.3.1
+1.3.2
 
 ### App Store Applications
 * Airmail
@@ -95,7 +95,7 @@ chsh -s $(which zsh)
 ```
 
 ### Sublime Text 3 Plugin Installer
-Hit Control + ` to access Console.
+Hit Control + \` to access Console.
 ```sh
 import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 ```
@@ -124,11 +124,10 @@ Plugins to install via Package Control:
 https://github.com/mbadolato/iTerm2-Color-Schemes
 
 ### Set Up SSH Keys
-```sh
 https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git
 https://help.github.com/articles/generating-ssh-keys/
-```
 
+```sh
 # check if installed
 ls -al ~/.ssh
 
@@ -156,6 +155,7 @@ git config --global color.ui true
 ### Set Hostname
 ```sh
 sudo scutil --set HostName ###
+
 ```
 
 ### Set Up Mac OS X Preferences
