@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.2.16
+1.3.1
 
 ### App Store Applications
 * Airmail
@@ -21,9 +21,9 @@ Quote time:
 * Adobe Photoshop
 * Adobe InDesign
 * Balsamiq Mockups
+* Docker
 * Franz
 * Google Chrome Canary
-* VS Code
 
 ### Homebrew Cask Applications
 * Arduino
@@ -31,7 +31,6 @@ Quote time:
 * Bartender
 * BetterTouchTool
 * Boom 2
-* CameraBag 2
 * CleanMyMac
 * Dropbox
 * Firefox Developer Edition
@@ -44,11 +43,16 @@ Quote time:
 * Kodi
 * OnePassword
 * PoEdit
+* Postman
 * Querious
+* Robo3T
+* Sketch
+* Slack
 * Sublime Text
 * The Unarchiver
 * Tower
 * Transmit
+* VLC
 * Vox
 
 ### .vimrc
@@ -65,6 +69,12 @@ https://github.com/arbitrarily/sublime-settings
 
 ### VS Code Preferences
 https://github.com/arbitrarily/vs-code-settings
+
+### Neofetch Settings
+https://github.com/arbitrarily/neofetch-settings
+
+### Nowplaying
+https://github.com/arbitrarily/nowplaying
 
 ### Fonts
 Fonts are Backed up to Dropbox/Resources/
@@ -108,38 +118,7 @@ Plugins to install via Package Control:
 * SidebarEnhancer
 * SublimeCodeIntel
 * Theme - Spacegray
-
-### VS Code Plugins
-* Auto Close Tag
-* Babel ES6/ES7
-* Debugger for Chrome
-* ESLint
-* Git Lens
-* gitignore
-* gitlink
-* HTML CSS Support
-* IntelliSense for CSS Classes
-* Javascript (ES6) Code Snippets
-* JSHint
-* JSX
-* MagicPython
-* Node Debug 2
-* npm
-* npm intellisense
-* One Monokai Theme
-* Output Colorizer
-* PHP Debug
-* PHP Extension Pack
-* PHP IntelliSense
-* Python
-* Python for VSCode
-* React Native Tools
-* SCSS IntelliSense
-* scss-lint
-* Sublime Duplicate Text
-* Sublime Text Keymap
-* SVG Viewer
-* VSCode Great Icons
+* zzz A File Icon zzz
 
 ### iTerm Colors
 https://github.com/mbadolato/iTerm2-Color-Schemes
@@ -182,10 +161,10 @@ sudo scutil --set HostName ###
 ### Set Up Mac OS X Preferences
 ```sh
 # Set a fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0.02
+defaults write NSGlobalDomain KeyRepeat -int 0.04
 
 # Set a shorter delay until key repeat
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
 # Add a contextual menu item to show the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
@@ -239,13 +218,18 @@ brew install python3
 
 ### Install PHP from Homebrew
 ```sh
+https://medium.com/zenchef-tech-and-product/how-to-upgrade-your-version-of-php-to-7-0-on-macos-sierra-e1bfdea55a63
 https://github.com/Homebrew/homebrew-php
 
+brew update && brew upgrade
 brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/homebrew-php
-brew install php56
-brew install php56-mycrypt
+brew unlink php56
+brew install php70
+brew install homebrew/php/php71-xdebug
+
+export PATH=”$(brew — prefix homebrew/php/php70)/bin:$PATH”
 
 ```
 
@@ -256,14 +240,18 @@ brew install php56-mycrypt
 brew install caskroom/cask/brew-cask
 
 # Common Programs
-brew install ack autojump automake colordiff curl git git-flow hub icoutils imagemagick libmemcached memcached openssl ossp-uuid qt readline redis tmux wget libxml2
+brew install ack autojump automake bash-completion bower colordiff curl git git-flow googler hub icoutils imagemagick jq libmemcached memcached neofetch openssl ossp-uuid qt readline redis tmux watch wget wp-cli libxml2
 
 # Cask Applications
-brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac dropbox firefoxdeveloperedition google-chrome grandperspective hands-off helium iterm2 imageoptim kaleidoscope querious sublime-text the-unarchiver tower vox vox-preference-pane
+brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac dropbox firefoxdeveloperedition google-chrome grandperspective hands-off helium iterm2 imageoptim kaleidoscope poedit postman querious robo-3t sketch slack sublime-text the-unarchiver tower vlc vox vox-preference-pane
 
 # Install Quick Look Plugins (preview code etc)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
 ```
+
+### Install Docker
+https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac
+https://docs.docker.com/compose/install/
 
 ### Alfred Cask Link
 ```sh
@@ -288,6 +276,7 @@ mysql.server start
 
 # Check MySQL Info
 brew info mysql
+
 ```
 
 ### Install MongoDB
@@ -331,18 +320,6 @@ sudo php -d detect_unicode=0 go-pear.phar
 # Press return
 
 pear version
-
-```
-
-### Install PHP Mongo
-```sh
-
-# Install Mongo
-sudo pecl install mongo
-
-sudo cp /etc/php.ini.default /etc/php.ini
-sudo chmod 644 /etc/php.ini
-echo "extension=mongo.so" >> /etc/php.ini
 
 ```
 
