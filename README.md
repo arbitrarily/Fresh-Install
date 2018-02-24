@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.3.2
+1.3.3
 
 ### App Store Applications
 * Airmail
@@ -56,25 +56,25 @@ Quote time:
 * Vox
 
 ### .vimrc
-https://github.com/arbitrarily/vimrc
+* https://github.com/arbitrarily/vimrc
 
 ### .zshrc
-https://github.com/arbitrarily/zshrc
+* https://github.com/arbitrarily/zshrc
 
 ### .bash_profile
-https://github.com/arbitrarily/bash_profile
+* https://github.com/arbitrarily/bash_profile
 
 ### Sublime Text Preferences
-https://github.com/arbitrarily/sublime-settings
+* https://github.com/arbitrarily/sublime-settings
 
 ### VS Code Preferences
-https://github.com/arbitrarily/vs-code-settings
+* https://github.com/arbitrarily/vs-code-settings
 
 ### Neofetch Settings
-https://github.com/arbitrarily/neofetch-settings
+* https://github.com/arbitrarily/neofetch-settings
 
 ### Nowplaying
-https://github.com/arbitrarily/nowplaying
+* https://github.com/arbitrarily/nowplaying
 
 ### Fonts
 Fonts are Backed up to Dropbox/Resources/
@@ -121,11 +121,11 @@ Plugins to install via Package Control:
 * zzz A File Icon zzz
 
 ### iTerm Colors
-https://github.com/mbadolato/iTerm2-Color-Schemes
+* https://github.com/mbadolato/iTerm2-Color-Schemes
 
 ### Set Up SSH Keys
-https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git
-https://help.github.com/articles/generating-ssh-keys/
+* https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git
+* https://help.github.com/articles/generating-ssh-keys/
 
 ```sh
 # check if installed
@@ -196,7 +196,7 @@ defaults write com.apple.dock persistent-others -array-add '{ "tile-data" = { "l
 ```
 
 ### Install Xcode
-https://itunes.apple.com/au/app/xcode/id497799835?mt=12
+* https://itunes.apple.com/au/app/xcode/id497799835?mt=12
 ```sh
 xcode-select --install
 ```
@@ -250,8 +250,8 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 ```
 
 ### Install Docker
-https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac
-https://docs.docker.com/compose/install/
+* https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac
+* https://docs.docker.com/compose/install/
 
 ### Alfred Cask Link
 ```sh
@@ -280,14 +280,14 @@ brew info mysql
 ```
 
 ### Install MongoDB
-http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/
+* http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/
 ```sh
 brew install mongodb
 
 ```
 
 ### Install Ruby Gem
-https://rubygems.org/pages/download
+* https://rubygems.org/pages/download
 ```sh
 gem update --system
 gem install rubygems-update
@@ -301,7 +301,7 @@ gem install sass
 ```
 
 ### Install PEAR/PECL
-http://jason.pureconcepts.net/2012/10/install-pear-pecl-mac-os-x/
+* http://jason.pureconcepts.net/2012/10/install-pear-pecl-mac-os-x/
 ```sh
 
 curl -O http://pear.php.net/go-pear.phar
@@ -323,6 +323,7 @@ pear version
 
 ```
 
-[Marko Bajlovic]:http://marko.tech
+### Marko Bajlovic
+* http://marko.tech
 
 Sourced from all over.
