@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.3.3
+1.3.4
 
 ### App Store Applications
 * Airmail
@@ -206,6 +206,10 @@ xcode-select --install
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew doctor
+
+# Install Cask Fonts
+brew tap caskroom/fonts
+
 ```
 
 ### Install Python 3
