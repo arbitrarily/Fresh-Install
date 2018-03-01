@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.3.4
+1.3.5
 
 ### App Store Applications
 * Airmail
@@ -161,10 +161,22 @@ sudo scutil --set HostName ###
 ### Set Up Mac OS X Preferences
 ```sh
 # Set a fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0.04
+defaults write NSGlobalDomain KeyRepeat -int 0
 
 # Set a shorter delay until key repeat
 defaults write NSGlobalDomain InitialKeyRepeat -int 12
+
+# Remove Animations
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
+
+# Hide the Desktop
+defaults write com.apple.finder CreateDesktop false; killall Finder
+
+# Skip Verify Images
+defaults write com.apple.frameworks.diskimages skip-verify true
+
+# Prevent Apple Character Press and Hold
+defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Add a contextual menu item to show the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
@@ -184,10 +196,13 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "
 defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
 
 # Faster Dock Animation
-defaults write com.apple.dock autohide-time-modifier -float 0.2; killall Dock
+defaults write com.apple.dock autohide-time-modifier -float 0.15; killall Dock
 
 # Dull Hidden Apps in Dock
 defaults write com.apple.Dock showhidden -bool TRUE; killall Dock
+
+# Disable Dashboard
+defaults write com.apple.dashboard mcx-disabled -bool true
 
 # Recents & Favorites in Dock (Favorite Items & Recent Docs)
 defaults write com.apple.dock persistent-others -array-add '{ "tile-data" = { "list-type" = 1; }; "tile-type" = "recents-tile"; }'; killall Dock
