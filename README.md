@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.3.5
+1.3.6
 
 ### App Store Applications
 * Airmail
@@ -17,13 +17,14 @@ Quote time:
 * Xcode
 
 ### Third Party Applications
+* Adobe Acrobat
 * Adobe Illustrator
 * Adobe Photoshop
 * Adobe InDesign
-* Balsamiq Mockups
+* Craft Manager
 * Docker
-* Franz
 * Google Chrome Canary
+* Google Chrome Remote Desktop
 
 ### Homebrew Cask Applications
 * Arduino
@@ -32,6 +33,7 @@ Quote time:
 * BetterTouchTool
 * Boom 2
 * CleanMyMac
+* Discord
 * Dropbox
 * Firefox Developer Edition
 * Google Chrome
@@ -102,6 +104,7 @@ import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330
 
 ### Sublime Text Plugins
 Plugins to install via Package Control:
+* A File Icon
 * Alignment
 * All Autocomplete
 * Babel
@@ -190,7 +193,7 @@ defaults write com.apple.screencapture location ~/Screenshots
 killall SystemUIServer
 
 # Add Message to Login Screen
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "In case of loss, please call 201-658-3842"
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "In case of loss, please call ###-###-####"
 
 # Enable Text Selection in QuickLook
 defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
@@ -262,7 +265,7 @@ brew install caskroom/cask/brew-cask
 brew install ack autojump automake bash-completion bower colordiff curl git git-flow googler hub icoutils imagemagick jq libmemcached memcached neofetch openssl ossp-uuid qt readline redis tmux watch wget wp-cli libxml2
 
 # Cask Applications
-brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac dropbox firefoxdeveloperedition google-chrome grandperspective hands-off helium iterm2 imageoptim kaleidoscope poedit postman querious robo-3t sketch slack sublime-text the-unarchiver tower vlc vox vox-preference-pane
+brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac discord dropbox firefoxdeveloperedition google-chrome grandperspective hands-off helium iterm2 imageoptim kaleidoscope poedit postman querious robo-3t sketch slack sublime-text the-unarchiver tower vlc vox vox-preference-pane
 
 # Install Quick Look Plugins (preview code etc)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
