@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.3.7
+1.3.8
 
 ### App Store Applications
 * Airmail
@@ -347,6 +347,7 @@ pear version
 
 ### Sketch Plugins
 Plugins to install:
+* https://github.com/arbitrarily/sketch-plugins (backup)
 * https://sketchapp.com/extensions/plugins/
 
 * automate-sketch
