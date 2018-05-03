@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.3.6
+1.3.7
 
 ### App Store Applications
 * Airmail
@@ -344,6 +344,29 @@ sudo php -d detect_unicode=0 go-pear.phar
 pear version
 
 ```
+
+### Sketch Plugins
+Plugins to install:
+* https://sketchapp.com/extensions/plugins/
+
+* automate-sketch
+* Better Paste
+* CSSketch
+* divider
+* Font-Packer
+* FontBuddy
+* Icondrop
+* Icon tools
+* ImageOptim
+* InVisionDesignSystems
+* jira
+* Panels
+* Shutterstock 1.0.2
+* sketch-transfer-styles
+* Wanderer
+* SFUI-Font-Fixer
+* SpellCheckWholePage
+* Swatches
 
 ### Marko Bajlovic
 * http://marko.tech
