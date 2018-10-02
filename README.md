@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.3.8
+1.3.9
 
 ### App Store Applications
 * Airmail
@@ -24,7 +24,6 @@ Quote time:
 * Craft Manager
 * Docker
 * Google Chrome Canary
-* Google Chrome Remote Desktop
 
 ### Homebrew Cask Applications
 * Arduino
@@ -33,12 +32,9 @@ Quote time:
 * BetterTouchTool
 * Boom 2
 * CleanMyMac
-* Discord
 * Dropbox
 * Firefox Developer Edition
-* Google Chrome
 * Hands Off!
-* Helium
 * iTerm2
 * ImageOptim
 * Kaleidoscope
@@ -47,7 +43,6 @@ Quote time:
 * PoEdit
 * Postman
 * Querious
-* Robo3T
 * Sketch
 * Slack
 * Sublime Text
@@ -194,6 +189,9 @@ killall SystemUIServer
 
 # Add Message to Login Screen
 sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "In case of loss, please call ###-###-####"
+
+# Make Sublime Default Text Editor
+defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.sublimetext.3;}'
 
 # Enable Text Selection in QuickLook
 defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
