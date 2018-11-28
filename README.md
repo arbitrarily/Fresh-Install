@@ -9,10 +9,11 @@ Quote time:
 
 
 ### Version
-1.3.9
+1.3.10
 
 ### App Store Applications
 * Airmail
+* iTunes
 * Quiver
 * Xcode
 
@@ -21,7 +22,7 @@ Quote time:
 * Adobe Illustrator
 * Adobe Photoshop
 * Adobe InDesign
-* Craft Manager
+* Backup & Sync from Google
 * Docker
 * Google Chrome Canary
 
@@ -205,9 +206,15 @@ defaults write com.apple.Dock showhidden -bool TRUE; killall Dock
 # Disable Dashboard
 defaults write com.apple.dashboard mcx-disabled -bool true
 
+# Make Dock only Show Active Apps
+defaults write com.apple.dock static-only -bool true; killall Dock
+
 # Recents & Favorites in Dock (Favorite Items & Recent Docs)
 defaults write com.apple.dock persistent-others -array-add '{ "tile-data" = { "list-type" = 1; }; "tile-type" = "recents-tile"; }'; killall Dock
 defaults write com.apple.dock persistent-others -array-add '{ "tile-data" = { "list-type" = 1; }; "tile-type" = "recents-tile"; }'; killall Dock
+
+# Just in Case: Revert Dock to Default
+defaults write com.apple.dock static-only -bool false; killall Dock
 
 ```
 
@@ -236,21 +243,30 @@ brew install python3
 # python3 for python3 command line
 ```
 
-### Install PHP from Homebrew
+### Install PHP from Homebrew & Xdebug from Pecl
 ```sh
 https://medium.com/zenchef-tech-and-product/how-to-upgrade-your-version-of-php-to-7-0-on-macos-sierra-e1bfdea55a63
 https://github.com/Homebrew/homebrew-php
 
 brew update && brew upgrade
+brew untap homebrew/php
 brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/homebrew-php
 brew unlink php56
-brew install php70
-brew install homebrew/php/php71-xdebug
+brew install php
+brew cleanup
+brew doctor
+
+pecl install xdebug
 
 export PATH=”$(brew — prefix homebrew/php/php70)/bin:$PATH”
 
+```
+
+Add Line Manually, Do not add through prompts
+```
+zend_extension="/usr/local/php/modules/xdebug.so"
 ```
 
 ### Install Apps Via Homebrew Cask
