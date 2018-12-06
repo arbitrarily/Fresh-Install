@@ -9,7 +9,7 @@ Quote time:
 
 
 ### Version
-1.3.10
+1.3.11
 
 ### App Store Applications
 * Airmail
@@ -27,12 +27,11 @@ Quote time:
 * Google Chrome Canary
 
 ### Homebrew Cask Applications
-* Arduino
 * Alfred 3
 * Bartender
 * BetterTouchTool
-* Boom 2
 * CleanMyMac
+* DaisyDisk
 * Dropbox
 * Firefox Developer Edition
 * Hands Off!
@@ -86,7 +85,8 @@ mkdir -p ~/bin && ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/b
 ```sh
 # sudo apt-get install zsh
 brew install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(c
+* DaisyDiskurl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Make Default Shell
 chsh -s $(which zsh)
@@ -233,6 +233,9 @@ brew doctor
 # Install Cask Fonts
 brew tap caskroom/fonts
 
+# Install Brew Packages
+brew install exa wp-cli googler howdoi itermocil neofetch themekit wget
+
 ```
 
 ### Install Python 3
@@ -279,7 +282,7 @@ brew install caskroom/cask/brew-cask
 brew install ack autojump automake bash-completion bower colordiff curl git git-flow googler hub icoutils imagemagick jq libmemcached memcached neofetch openssl ossp-uuid qt readline redis tmux watch wget wp-cli libxml2
 
 # Cask Applications
-brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac discord dropbox firefoxdeveloperedition google-chrome grandperspective hands-off helium iterm2 imageoptim kaleidoscope poedit postman querious robo-3t sketch slack sublime-text the-unarchiver tower vlc vox vox-preference-pane
+brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac daisydisk discord dropbox firefoxdeveloperedition google-chrome grandperspective hands-off helium iterm2 imageoptim kaleidoscope poedit postman querious robo-3t sketch slack sublime-text the-unarchiver tower vlc vox vox-preference-pane
 
 # Install Quick Look Plugins (preview code etc)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
