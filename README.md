@@ -9,11 +9,11 @@ Quote time:
 
 
 ### Version
-1.3.11
+1.4.0
 
 ### App Store Applications
-* Airmail
 * iTunes
+* NepTunes
 * Quiver
 * Xcode
 
@@ -21,7 +21,6 @@ Quote time:
 * Adobe Acrobat
 * Adobe Illustrator
 * Adobe Photoshop
-* Adobe InDesign
 * Backup & Sync from Google
 * Docker
 * Google Chrome Canary
@@ -31,8 +30,8 @@ Quote time:
 * Bartender
 * BetterTouchTool
 * CleanMyMac
-* DaisyDisk
 * Dropbox
+* Figma
 * Firefox Developer Edition
 * Hands Off!
 * iTerm2
@@ -47,15 +46,18 @@ Quote time:
 * Slack
 * Sublime Text
 * The Unarchiver
+* Telegram
+* Thunderbird
 * Tower
 * Transmit
+* Ungoogled Chromium
 * VLC
 * Vox
 
 ### .vimrc
 * https://github.com/arbitrarily/vimrc
 
-### .zshrc
+### .zshrc (primary)
 * https://github.com/arbitrarily/zshrc
 
 ### .bash_profile
@@ -103,21 +105,28 @@ Plugins to install via Package Control:
 * A File Icon
 * Alignment
 * All Autocomplete
+* AutoFileName
+* AutoSetSyntax
 * Babel
 * Better JavaScript
 * BracketHighlighter
 * Color Highlighter
+* Dockerfile Syntax Highlighting
+* DotENV
+* EditorConfig
+* File Icons Mono
 * GitGutter
+* GitOpenChangedFiles
 * HTML-CSS-JS Prettify
-* Modific
+* Liquid
 * Monokai Extended
+* nginx
+* Pane Pane
 * Pretty JSON
 * Sass
 * SassBeautify
 * SidebarEnhancer
-* SublimeCodeIntel
 * Theme - Spacegray
-* zzz A File Icon zzz
 
 ### iTerm Colors
 * https://github.com/mbadolato/iTerm2-Color-Schemes
@@ -144,7 +153,7 @@ ssh -T git@github.com
 ```sh
 git config --global user.name "Name"
 git config --global user.email email@email.com
-git config --global github.user arbitrarily
+git config --global github.user user_name_here
 git config --global github.token your_token_here
 git config -l --global
 git config --global core.editor "subl ."
@@ -249,7 +258,6 @@ brew install python3
 ### Install PHP from Homebrew & Xdebug from Pecl
 ```sh
 https://medium.com/zenchef-tech-and-product/how-to-upgrade-your-version-of-php-to-7-0-on-macos-sierra-e1bfdea55a63
-https://github.com/Homebrew/homebrew-php
 
 brew update && brew upgrade
 brew untap homebrew/php
@@ -263,9 +271,11 @@ brew doctor
 
 pecl install xdebug
 
-export PATH=”$(brew — prefix homebrew/php/php70)/bin:$PATH”
+export PATH=”$(brew — prefix homebrew/php/php7X)/bin:$PATH”
 
 ```
+
+Just remember to change the `X` in the PHP version in the last export line to whatever the latest one you're using is.
 
 Add Line Manually, Do not add through prompts
 ```
@@ -279,10 +289,10 @@ zend_extension="/usr/local/php/modules/xdebug.so"
 brew install caskroom/cask/brew-cask
 
 # Common Programs
-brew install ack autojump automake bash-completion bower colordiff curl git git-flow googler hub icoutils imagemagick jq libmemcached memcached neofetch openssl ossp-uuid qt readline redis tmux watch wget wp-cli libxml2
+brew install ack autojump automake bash-completion bower colordiff curl exa figma git git-flow googler hub icoutils imagemagick jq libmemcached memcached neofetch openssl ossp-uuid qt readline redis tmux watch wget wp-cli libxml2
 
 # Cask Applications
-brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac daisydisk discord dropbox firefoxdeveloperedition google-chrome grandperspective hands-off helium iterm2 imageoptim kaleidoscope poedit postman querious robo-3t sketch slack sublime-text the-unarchiver tower vlc vox vox-preference-pane
+brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac daisydisk discord dropbox eloston-chromium firefoxdeveloperedition grandperspective hands-off helium iterm2 imageoptim kaleidoscope poedit postman querious robo-3t sketch slack sublime-text telegram the-unarchiver thunderbird tower vlc vox vox-preference-pane
 
 # Install Quick Look Plugins (preview code etc)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
@@ -387,6 +397,6 @@ Plugins to install:
 * Swatches
 
 ### Marko Bajlovic
-* http://marko.tech
+* https://marko.tech
 
 Sourced from all over.
