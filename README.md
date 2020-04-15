@@ -7,9 +7,8 @@ Quote time:
 > “To be in hell is to drift; to be in heaven is to steer.”
 ― George Bernard Shaw
 
-
 ### Version
-1.4.0
+1.4.1
 
 ### App Store Applications
 * iTunes
@@ -66,14 +65,17 @@ Quote time:
 ### Sublime Text Preferences
 * https://github.com/arbitrarily/sublime-settings
 
-### VS Code Preferences
-* https://github.com/arbitrarily/vs-code-settings
+### Yabai
+* https://github.com/arbitrarily/yabairc
 
 ### Neofetch Settings
 * https://github.com/arbitrarily/neofetch-settings
 
 ### Nowplaying
 * https://github.com/arbitrarily/nowplaying
+
+### Thunderbird Theme
+* https://github.com/arbitrarily/monterail-fulldark
 
 ### Fonts
 Fonts are Backed up to Dropbox/Resources/
@@ -370,6 +372,26 @@ sudo php -d detect_unicode=0 go-pear.phar
 
 pear version
 
+```
+
+### Install Yabai
+Install Yabai Window Manager
+
+First disable SIP:
+```bash
+csrutil disable
+```
+
+then after reboot:
+
+```bash
+brew install koekeishiya/formulae/yabai
+
+sudo yabai --install-sa
+
+brew services start yabai
+
+killall Dock
 ```
 
 ### Sketch Plugins
