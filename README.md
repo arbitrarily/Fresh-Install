@@ -8,7 +8,7 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.4.2
+1.4.3
 
 ### App Store Applications
 * iTunes
@@ -245,7 +245,7 @@ brew doctor
 brew tap caskroom/fonts
 
 # Install Brew Packages
-brew install exa wp-cli googler itermocil neofetch themekit wget httpie youtube-dl wp-cli yarn ffmpeg gifsicle git ripgrep imagemagick z yabai terminal-notifier
+brew install exa wp-cli googler itermocil neofetch themekit wget httpie youtube-dl wp-cli yarn ffmpeg gifsicle git ripgrep imagemagick z yabai terminal-notifier jq
 
 ```
 
