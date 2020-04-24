@@ -8,7 +8,7 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.4.4
+1.4.5
 
 ### App Store Applications
 * iTunes
@@ -67,6 +67,9 @@ Quote time:
 
 ### Yabai
 * https://github.com/arbitrarily/yabairc
+
+### cmus Theme
+* https://github.com/arbitrarily/cmus-theme
 
 ### Neofetch Settings
 * https://github.com/arbitrarily/neofetch-settings
@@ -243,9 +246,6 @@ brew doctor
 
 # Install Cask Fonts
 brew tap caskroom/fonts
-
-# Install Brew Packages
-brew install exa wp-cli googler itermocil neofetch themekit wget httpie youtube-dl wp-cli yarn ffmpeg gifsicle git ripgrep imagemagick z yabai terminal-notifier jq fd bat
 ```
 
 ### Install Python 3
@@ -254,6 +254,9 @@ http://python-guide-pt-br.readthedocs.io/en/latest/starting/install3/osx/
 
 brew install python3
 # python3 for python3 command line
+
+# Common Programs
+brew install ack autojump automake bash-completion bat bower colordiff cmus cmusfm curl exa fd figma ffmpeg gifsicle git git-flow googler hub httpie icoutils imagemagick itermocil jq libmemcached libxml2 memcached neofetch openssl ossp-uuid qt readline redis ripgrep terminal-notifier themekit tmux watch wget wp-cli yabai yarn youtube-dl z
 ```
 
 ### Install PHP from Homebrew & Xdebug from Pecl
@@ -288,9 +291,6 @@ zend_extension="/usr/local/php/modules/xdebug.so"
 ```sh
 # Install Brew Cask
 brew install caskroom/cask/brew-cask
-
-# Common Programs
-brew install ack autojump automake bash-completion bower colordiff curl exa figma git git-flow googler hub icoutils imagemagick jq libmemcached memcached neofetch openssl ossp-uuid qt readline redis tmux watch wget wp-cli libxml2
 
 # Cask Applications
 brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac daisydisk discord dropbox eloston-chromium firefoxdeveloperedition grandperspective hands-off helium iterm2 imageoptim kaleidoscope poedit postman querious robo-3t sketch slack sublime-text telegram the-unarchiver thunderbird tower vlc vox vox-preference-pane
@@ -347,6 +347,7 @@ update_rubygems
 gem install compass
 gem install foundation
 gem install sass
+gem install istats
 
 ```
 
