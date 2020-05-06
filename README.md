@@ -8,7 +8,7 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.4.5
+1.4.6
 
 ### App Store Applications
 * iTunes
@@ -38,7 +38,6 @@ Quote time:
 * Kaleidoscope
 * Kodi
 * OnePassword
-* PoEdit
 * Postman
 * Querious
 * Sketch
@@ -292,8 +291,11 @@ zend_extension="/usr/local/php/modules/xdebug.so"
 # Install Brew Cask
 brew install caskroom/cask/brew-cask
 
+# Install Fonts
+brew tap homebrew/cask-fonts
+
 # Cask Applications
-brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac daisydisk discord dropbox eloston-chromium firefoxdeveloperedition grandperspective hands-off helium iterm2 imageoptim kaleidoscope poedit postman querious robo-3t sketch slack sublime-text telegram the-unarchiver thunderbird tower vlc vox vox-preference-pane
+brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac daisydisk discord dropbox eloston-chromium firefoxdeveloperedition font-hack-nerd-font grandperspective hands-off helium iterm2 imageoptim kaleidoscope poedit postman querious robo-3t sketch slack sublime-text telegram the-unarchiver thunderbird tower vlc vox vox-preference-pane
 
 # Install Quick Look Plugins (preview code etc)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
