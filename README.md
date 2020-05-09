@@ -8,7 +8,7 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.4.6
+1.4.7
 
 ### App Store Applications
 * iTunes
@@ -32,11 +32,12 @@ Quote time:
 * Dropbox
 * Figma
 * Firefox Developer Edition
-* Hands Off!
 * iTerm2
 * ImageOptim
 * Kaleidoscope
 * Kodi
+* Little Snitch
+* Micro Snitch
 * OnePassword
 * Postman
 * Querious
@@ -295,7 +296,7 @@ brew install caskroom/cask/brew-cask
 brew tap homebrew/cask-fonts
 
 # Cask Applications
-brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac daisydisk discord dropbox eloston-chromium firefoxdeveloperedition font-hack-nerd-font grandperspective hands-off helium iterm2 imageoptim kaleidoscope poedit postman querious robo-3t sketch slack sublime-text telegram the-unarchiver thunderbird tower vlc vox vox-preference-pane
+brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac daisydisk discord dropbox eloston-chromium firefoxdeveloperedition font-hack-nerd-font grandperspective helium iterm2 imageoptim kaleidoscope little-snitch micro-snitch poedit postman querious robo-3t sketch slack sublime-text telegram the-unarchiver thunderbird tower vlc vox vox-preference-pane
 
 # Install Quick Look Plugins (preview code etc)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
@@ -411,7 +412,6 @@ Plugins to install:
 * Icon tools
 * ImageOptim
 * InVisionDesignSystems
-* jira
 * Panels
 * Shutterstock 1.0.2
 * sketch-transfer-styles
