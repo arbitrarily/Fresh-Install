@@ -8,7 +8,7 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.4.8
+1.4.9
 
 ### App Store Applications
 * iTunes
@@ -254,7 +254,7 @@ brew install python3
 # python3 for python3 command line
 
 # Common Programs
-brew install ack autojump automake bash-completion bat bower colordiff cmus cmusfm curl exa fd figma ffmpeg gifsicle git git-flow googler hub httpie icoutils imagemagick itermocil jq libmemcached libxml2 memcached neofetch openssl ossp-uuid qt readline redis ripgrep terminal-notifier themekit tmux watch wget wp-cli yabai yarn youtube-dl z
+brew install ack autojump automake bash-completion bat bower colordiff cmus cmusfm curl exa fd ffmpeg gifsicle git git-flow googler hub httpie icoutils imagemagick itermocil jq libmemcached libxml2 memcached neofetch openssl ossp-uuid qt readline redis ripgrep terminal-notifier themekit tmux watch wget wp-cli yabai yarn youtube-dl z
 ```
 
 ### Install PHP from Homebrew & Xdebug from Pecl
@@ -295,7 +295,7 @@ brew tap homebrew/cask-versions
 brew tap homebrew/cask-fonts
 
 # Cask Applications
-brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac daisydisk discord dropbox eloston-chromium firefox-developer-edition font-hack-nerd-font iterm2 imageoptim kaleidoscope little-snitch poedit postman querious robo-3t sketch slack sublime-text telegram the-unarchiver thunderbird tower vlc vox 
+brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac daisydisk discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim kaleidoscope little-snitch poedit postman querious robo-3t sketch slack sublime-text telegram the-unarchiver thunderbird tower vlc vox 
 
 # Install Quick Look Plugins (preview code etc)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
