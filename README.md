@@ -8,7 +8,7 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.4.9
+1.4.10
 
 ### App Store Applications
 * iTunes
@@ -293,6 +293,15 @@ brew tap homebrew/cask-versions
 
 # Install Fonts
 brew tap homebrew/cask-fonts
+
+# iTermocil
+brew install TomAnthony/brews/itermocil
+
+# Yabai
+brew install koekeishiya/formulae/yabai
+
+# Shopify Themekit
+brew tap shopify/shopify
 
 # Cask Applications
 brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac daisydisk discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim kaleidoscope little-snitch poedit postman querious robo-3t sketch slack sublime-text telegram the-unarchiver thunderbird tower vlc vox 
