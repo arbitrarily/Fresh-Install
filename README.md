@@ -8,9 +8,10 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.4.10
+1.4.11
 
 ### App Store Applications
+* ColorSlurp
 * iTunes
 * NepTunes
 * Quiver
@@ -95,13 +96,20 @@ sh -c "$(c
 
 # Make Default Shell
 chsh -s $(which zsh)
+
+# Install Oh-My-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Install Oh My ZSH Plugins
+curl -L https://iterm2.com/shell_integration/zsh \
+-o ~/.iterm2_shell_integration.zsh
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 ### Sublime Text 3 Plugin Installer
-Hit Control + \` to access Console.
-```sh
-import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
-```
+
+Just hit **Command + Shift + P** then hit install `Package Control` and we're set to install plugins again.
 
 ### Sublime Text Plugins
 Plugins to install via Package Control:
@@ -128,7 +136,7 @@ Plugins to install via Package Control:
 * Pretty JSON
 * Sass
 * SassBeautify
-* SidebarEnhancer
+* SidebarEnhancement
 * Theme - Spacegray
 
 ### iTerm Colors
@@ -293,6 +301,7 @@ brew tap homebrew/cask-versions
 
 # Install Fonts
 brew tap homebrew/cask-fonts
+brew cask install font-hack-nerd-font
 
 # iTermocil
 brew install TomAnthony/brews/itermocil
@@ -304,7 +313,7 @@ brew install koekeishiya/formulae/yabai
 brew tap shopify/shopify
 
 # Cask Applications
-brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac daisydisk discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim kaleidoscope little-snitch poedit postman querious robo-3t sketch slack sublime-text telegram the-unarchiver thunderbird tower vlc vox 
+brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac daisydisk discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim kaleidoscope little-snitch poedit postman querious robo-3t sketch slack sublime-text telegram the-unarchiver thunderbird tower vlc vox
 
 # Install Quick Look Plugins (preview code etc)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
@@ -360,6 +369,12 @@ gem install foundation
 gem install sass
 gem install istats
 
+```
+
+### NPM Stuff
+```sh
+# Install NPM Packages
+npm install -g eslint eslint-cli eslint-plugin-prettier gatsby-cli grunt-cli gulp-cli is-up-cli prettier vtop surge fkill-cli
 ```
 
 ### Install PEAR/PECL
