@@ -8,7 +8,7 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.4.11
+1.4.12
 
 ### App Store Applications
 * ColorSlurp
@@ -21,6 +21,8 @@ Quote time:
 * Adobe Acrobat
 * Adobe Illustrator
 * Adobe Photoshop
+* Adobe Dimension
+* Adobe Aftereffects
 * Backup & Sync from Google
 * Docker
 
@@ -32,6 +34,7 @@ Quote time:
 * Dropbox
 * Figma
 * Firefox Developer Edition
+* IconJar
 * iTerm2
 * ImageOptim
 * Kaleidoscope
@@ -40,7 +43,6 @@ Quote time:
 * OnePassword
 * Postman
 * Querious
-* Sketch
 * Slack
 * Sublime Text
 * The Unarchiver
@@ -419,29 +421,6 @@ brew services start yabai
 
 killall Dock
 ```
-
-### Sketch Plugins
-Plugins to install:
-* https://github.com/arbitrarily/sketch-plugins (backup)
-* https://sketchapp.com/extensions/plugins/
-
-* automate-sketch
-* Better Paste
-* CSSketch
-* divider
-* Font-Packer
-* FontBuddy
-* Icondrop
-* Icon tools
-* ImageOptim
-* InVisionDesignSystems
-* Panels
-* Shutterstock 1.0.2
-* sketch-transfer-styles
-* Wanderer
-* SFUI-Font-Fixer
-* SpellCheckWholePage
-* Swatches
 
 ### Marko Bajlovic
 * https://marko.tech
