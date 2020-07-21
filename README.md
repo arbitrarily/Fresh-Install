@@ -8,7 +8,7 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.4.12
+1.4.13
 
 ### App Store Applications
 * ColorSlurp
@@ -376,7 +376,7 @@ gem install istats
 ### NPM Stuff
 ```sh
 # Install NPM Packages
-npm install -g eslint eslint-cli eslint-plugin-prettier gatsby-cli grunt-cli gulp-cli is-up-cli prettier vtop surge fkill-cli
+npm install -g eslint eslint-cli eslint-plugin-prettier gatsby-cli grunt-cli gulp-cli is-up-cli prettier vtop surge fkill-cli json
 ```
 
 ### Install PEAR/PECL
