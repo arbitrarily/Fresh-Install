@@ -8,27 +8,27 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.5.0
+1.5.1
 
 ### Last Tested on
 MacOS 10.15.5
 
 ### App Store Applications
-* ColorSlurp
-* Music (Apple)
-* NepTunes
-* Quiver
-* Toothfairy
-* Tweetbot
-* Xcode
+* [Apple Music](https://music.apple.com)
+* [ColorSlurp](https://apps.apple.com/us/app/colorslurp/id1287239339)
+* [NepTunes](https://apps.apple.com/us/app/neptunes-for-lastfm/id1006739057)
+* [Quiver](https://apps.apple.com/us/app/quiver-take-better-notes/id866773894)
+* [Toothfairy](https://apps.apple.com/us/app/toothfairy/id1191449274)
+* [Tweetbot](https://tapbots.com/tweetbot/mac/)
+* [Xcode](https://apps.apple.com/us/app/xcode/id497799835)
 
 ### Third Party Applications
-* Adobe Acrobat
-* Adobe Illustrator
-* Adobe Photoshop
-* Adobe Dimension
-* Adobe Aftereffects
-* Backup & Sync from Google
+* [Adobe Acrobat](https://www.adobe.com/creativecloud.html)
+* [Adobe Illustrator](https://www.adobe.com/creativecloud.html)
+* [Adobe Photoshop](https://www.adobe.com/creativecloud.html)
+* [Adobe Dimension](https://www.adobe.com/creativecloud.html)
+* [Adobe Aftereffects](https://www.adobe.com/creativecloud.html)
+* [Backup & Sync from Google](https://www.google.com/intl/en_fj/drive/download/)
 * Docker
 
 ### Homebrew Cask Applications
