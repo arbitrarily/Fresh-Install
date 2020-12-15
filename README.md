@@ -8,13 +8,18 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.4.13
+1.5.0
+
+### Last Tested on
+MacOS 10.15.5
 
 ### App Store Applications
 * ColorSlurp
-* iTunes
+* Music (Apple)
 * NepTunes
 * Quiver
+* Toothfairy
+* Tweetbot
 * Xcode
 
 ### Third Party Applications
@@ -27,9 +32,11 @@ Quote time:
 * Docker
 
 ### Homebrew Cask Applications
+* 1Password
 * Alfred 3
 * Bartender
 * BetterTouchTool
+* Blender
 * CleanMyMac
 * Dropbox
 * Figma
@@ -37,22 +44,21 @@ Quote time:
 * IconJar
 * iTerm2
 * ImageOptim
-* Kaleidoscope
+* Kaleidoscope (may replace with Sublime Merge)
 * Kodi
 * Little Snitch
-* OnePassword
 * Postman
 * Querious
 * Slack
+* Steam
 * Sublime Text
+* Sublime Merge
 * The Unarchiver
-* Telegram
 * Thunderbird
 * Tower
 * Transmit
 * Ungoogled Chromium
 * VLC
-* Vox
 
 ### .vimrc
 * https://github.com/arbitrarily/vimrc
@@ -267,7 +273,7 @@ brew install python3
 brew install ack autojump automake bash-completion bat bower colordiff cmus cmusfm curl exa fd ffmpeg gifsicle git git-flow googler hub httpie icoutils imagemagick itermocil jq libmemcached libxml2 memcached neofetch openssl ossp-uuid qt readline redis ripgrep terminal-notifier themekit tmux watch wget wp-cli yabai yarn youtube-dl z
 ```
 
-### Install PHP from Homebrew & Xdebug from Pecl
+### Install PHP from Homebrew
 ```sh
 https://medium.com/zenchef-tech-and-product/how-to-upgrade-your-version-of-php-to-7-0-on-macos-sierra-e1bfdea55a63
 
@@ -276,23 +282,16 @@ brew untap homebrew/php
 brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/homebrew-php
-brew unlink php56
+# brew unlink php56 (this is redundant now)
 brew install php
 brew cleanup
 brew doctor
-
-pecl install xdebug
 
 export PATH=”$(brew — prefix homebrew/php/php7X)/bin:$PATH”
 
 ```
 
 Just remember to change the `X` in the PHP version in the last export line to whatever the latest one you're using is.
-
-Add Line Manually, Do not add through prompts
-```
-zend_extension="/usr/local/php/modules/xdebug.so"
-```
 
 ### Install Apps Via Homebrew Cask
 
@@ -315,7 +314,7 @@ brew install koekeishiya/formulae/yabai
 brew tap shopify/shopify
 
 # Cask Applications
-brew cask install 1password alfred arduino bartender bettertouchtool cleanmymac daisydisk discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim kaleidoscope little-snitch poedit postman querious robo-3t sketch slack sublime-text telegram the-unarchiver thunderbird tower vlc vox
+brew cask install 1password alfred arduino bartender bettertouchtool blender cleanmymac discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim kaleidoscope little-snitch poedit postman querious robo-3t sketch slack steam sublime-text sublime-merge the-unarchiver thunderbird tower vlc vox
 
 # Install Quick Look Plugins (preview code etc)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
@@ -425,4 +424,4 @@ killall Dock
 ### Marko Bajlovic
 * https://marko.tech
 
-Sourced from all over.
+Sourced from all over and throughout the years.
