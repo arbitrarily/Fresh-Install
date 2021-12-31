@@ -275,7 +275,7 @@ brew install python3
 # python3 for python3 command line
 
 # Common Programs
-brew install ack autojump automake bash-completion bat bower colordiff cmus cmusfm curl exa fd ffmpeg gifsicle git git-flow googler hub httpie icoutils imagemagick itermocil jq libmemcached libxml2 memcached neofetch openssl ossp-uuid qt readline redis rmtree ripgrep terminal-notifier themekit tmux watch wget wp-cli yabai yarn youtube-dl z
+brew install ack autojump automake bash-completion bat colordiff cmus cmusfm curl exa fd ffmpeg gifsicle git httpie icoutils imagemagick itermocil jq libmemcached libxml2 memcached neofetch openssl ossp-uuid qt readline redis rmtree ripgrep terminal-notifier themekit wget wp-cli yabai yarn youtube-dl z
 ```
 
 ### Install PHP from Homebrew
