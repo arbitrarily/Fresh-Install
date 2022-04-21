@@ -8,10 +8,10 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.5.2
+1.5.3
 
 ### Last Tested on
-MacOS 10.15.7
+MacOS 12.3.1
 
 ### App Store Applications
 * [Apple Music](https://music.apple.com)
@@ -25,7 +25,6 @@ MacOS 10.15.7
 * [Adobe Acrobat](https://www.adobe.com/creativecloud.html)
 * [Adobe Illustrator](https://www.adobe.com/creativecloud.html)
 * [Adobe Photoshop](https://www.adobe.com/creativecloud.html)
-* [Adobe Dimension](https://www.adobe.com/creativecloud.html)
 * [Adobe Aftereffects](https://www.adobe.com/creativecloud.html)
 * [Backup & Sync from Google](https://www.google.com/intl/en_fj/drive/download/)
 * Docker
@@ -46,10 +45,11 @@ MacOS 10.15.7
 * font-hack-nerd-font
 * iconjar
 * imageoptim
+* iina
+* insomnia
 * iterm2
 * kodi
 * little-snitch
-* mpv
 * qlcolorcode
 * qlmarkdown
 * qlprettypatch
@@ -80,8 +80,11 @@ MacOS 10.15.7
 ### Sublime Text Preferences
 * https://github.com/arbitrarily/sublime-settings
 
-### Yabai
+### .yabairc
 * https://github.com/arbitrarily/yabairc
+
+### .skhdrc (primary)
+* https://github.com/arbitrarily/skhdrc
 
 ### cmus Theme
 * https://github.com/arbitrarily/cmus-theme
@@ -142,7 +145,11 @@ Plugins to install via Package Control:
 * GitGutter
 * GitOpenChangedFiles
 * HTML-CSS-JS Prettify
-* Liquid
+* JsPrettier
+* Liquid-HTML
+* LSP
+* LSP-stylelint
+* LSP-eslint
 * Monokai Extended
 * nginx
 * Pane Pane
@@ -150,6 +157,7 @@ Plugins to install via Package Control:
 * Sass
 * SassBeautify
 * SidebarEnhancement
+* SublimeLinter
 * Theme - Spacegray
 
 ### iTerm Colors
@@ -311,14 +319,14 @@ brew install TomAnthony/brews/itermocil
 # Yabai
 brew install koekeishiya/formulae/yabai
 
-# Shopify Themekit
+# Shopify
 brew tap shopify/shopify
 
 # Cask Applications
-brew install 1password alfred arduino bartender bettertouchtool blender bpytop discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim lastfm little-snitch querious robo-3t slack sublime-text sublime-merge the-unarchiver vlc
+brew install 1password alfred arduino bartender bettertouchtool blender bpytop discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim iina insomnia lastfm little-snitch querious robo-3t slack sublime-text sublime-merge the-unarchiver vlc
 
 # Install Quick Look Plugins (preview code etc)
-brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package webpquicklook && qlmanage -r
+brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package apparency quicklookase qlvideo
 ```
 
 ### Install Docker
