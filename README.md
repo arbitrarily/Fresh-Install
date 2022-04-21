@@ -8,7 +8,7 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.5.3
+1.6.0
 
 ### Last Tested on
 MacOS 12.3.1
@@ -26,15 +26,13 @@ MacOS 12.3.1
 * [Adobe Illustrator](https://www.adobe.com/creativecloud.html)
 * [Adobe Photoshop](https://www.adobe.com/creativecloud.html)
 * [Adobe Aftereffects](https://www.adobe.com/creativecloud.html)
-* [Backup & Sync from Google](https://www.google.com/intl/en_fj/drive/download/)
-* Docker
+* [Google Drive](https://www.google.com/intl/en_fj/drive/download/)
 
 ### Homebrew Cask Applications
 * 1password
 * alfred
 * appcleaner
 * bartender
-* bettertouchtool
 * blender
 * discord
 * dropbox
@@ -65,7 +63,6 @@ MacOS 12.3.1
 * the-unarchiver
 * transmit
 * virtualbox
-* vlc
 * webpquicklook
 
 ### .vimrc
@@ -74,17 +71,17 @@ MacOS 12.3.1
 ### .zshrc (primary)
 * https://github.com/arbitrarily/zshrc
 
-### .bash_profile
-* https://github.com/arbitrarily/bash_profile
-
-### Sublime Text Preferences
-* https://github.com/arbitrarily/sublime-settings
-
 ### .yabairc
 * https://github.com/arbitrarily/yabairc
 
 ### .skhdrc (primary)
 * https://github.com/arbitrarily/skhdrc
+
+### firefox new tab loading page
+* https://github.com/arbitrarily/firefox-new-tab
+
+### Sublime Text Preferences
+* https://github.com/arbitrarily/sublime-settings
 
 ### cmus Theme
 * https://github.com/arbitrarily/cmus-theme
@@ -319,11 +316,14 @@ brew install TomAnthony/brews/itermocil
 # Yabai
 brew install koekeishiya/formulae/yabai
 
+# shkd
+brew install koekeishiya/formulae/skhd
+
 # Shopify
 brew tap shopify/shopify
 
 # Cask Applications
-brew install 1password alfred arduino bartender bettertouchtool blender bpytop discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim iina insomnia lastfm little-snitch querious robo-3t slack sublime-text sublime-merge the-unarchiver vlc
+brew install 1password alfred arduino bartender blender bpytop discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim iina insomnia lastfm little-snitch querious robo-3t slack sublime-text sublime-merge the-unarchiver
 
 # Install Quick Look Plugins (preview code etc)
 brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package apparency quicklookase qlvideo
