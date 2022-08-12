@@ -8,7 +8,7 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.6.0
+1.7.1
 
 ### Last Tested on
 MacOS 12.3.1
@@ -17,7 +17,6 @@ MacOS 12.3.1
 * [Apple Music](https://music.apple.com)
 * [ColorSlurp](https://apps.apple.com/us/app/colorslurp/id1287239339)
 * [Quiver](https://apps.apple.com/us/app/quiver-take-better-notes/id866773894)
-* [Toothfairy](https://apps.apple.com/us/app/toothfairy/id1191449274)
 * [Tweetbot](https://tapbots.com/tweetbot/mac/)
 * [Xcode](https://apps.apple.com/us/app/xcode/id497799835)
 
@@ -92,13 +91,20 @@ MacOS 12.3.1
 ### Nowplaying
 * https://github.com/arbitrarily/nowplaying
 
+### Link Dotfiles
+```sh
+# zsh
+ln -s ~/Git/zshrc/.zshrc ~/.zshrc
+# skhdrc
+ln -s ~/Git/skhdrc/.skhdrc ~/.skhdrc
+# yabairc
+ln -s ~/Git/yabairc/.yabairc ~/.yabairc
+# vimrc
+ln -s ~/Git/vimrc/vimrc ~/.vimrc
+```
+
 ### Fonts
 Fonts are Backed up to Dropbox/Resources/
-
-### Configure Sublime Text Command Line
-```sh
-mkdir -p ~/bin && ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
-```
 
 ### zsh
 ```sh
@@ -149,7 +155,6 @@ Plugins to install via Package Control:
 * LSP-eslint
 * Monokai Extended
 * nginx
-* Pane Pane
 * Pretty JSON
 * Sass
 * SassBeautify
@@ -269,7 +274,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew doctor
 
 # Install Cask Fonts
-brew tap caskroom/fonts
+brew tap homebrew/cask-cask-fonts
 ```
 
 ### Install Python 3
@@ -280,24 +285,21 @@ brew install python3
 # python3 for python3 command line
 
 # Common Programs
-brew install ack autojump automake bash-completion bat colordiff cmus cmusfm curl exa fd ffmpeg gifsicle git httpie icoutils imagemagick itermocil jq libmemcached libxml2 memcached neofetch openssl ossp-uuid qt readline redis rmtree ripgrep terminal-notifier themekit wget wp-cli yabai yarn youtube-dl z
+brew install ack autojump automake bash-completion bat colordiff cmus cmusfm curl exa fd ffmpeg gifsicle git httpie icoutils imagemagick itermocil jq libmemcached libxml2 memcached neofetch openssl ossp-uuid qt readline ripgrep terminal-notifier wget wp-cli yabai yarn youtube-dl z
 ```
 
 ### Install PHP from Homebrew
 ```sh
-https://medium.com/zenchef-tech-and-product/how-to-upgrade-your-version-of-php-to-7-0-on-macos-sierra-e1bfdea55a63
-
 brew update && brew upgrade
 brew untap homebrew/php
 brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/homebrew-php
-# brew unlink php56 (this is redundant now)
 brew install php
 brew cleanup
 brew doctor
 
-export PATH=”$(brew — prefix homebrew/php/php7X)/bin:$PATH”
+export PATH=”$(brew — prefix homebrew/php/php8X)/bin:$PATH”
 
 ```
 
@@ -323,7 +325,7 @@ brew install koekeishiya/formulae/skhd
 brew tap shopify/shopify
 
 # Cask Applications
-brew install 1password alfred arduino bartender blender bpytop discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim iina insomnia lastfm little-snitch querious robo-3t slack sublime-text sublime-merge the-unarchiver
+brew install 1password alfred arduino bartender blender bpytop discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim iina insomnia lastfm little-snitch mimestream querious robo-3t slack sublime-text sublime-merge the-unarchiver
 
 # Install Quick Look Plugins (preview code etc)
 brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package apparency quicklookase qlvideo
@@ -366,48 +368,10 @@ brew install mongodb
 
 ```
 
-### Install Ruby Gem
-* https://rubygems.org/pages/download
-```sh
-gem update --system
-gem install rubygems-update
-update_rubygems
-
-# Install Gems
-gem install compass
-gem install foundation
-gem install sass
-gem install istats
-
-```
-
 ### NPM Stuff
 ```sh
 # Install NPM Packages
 npm install -g eslint eslint-cli eslint-plugin-prettier gatsby-cli grunt-cli gulp-cli is-up-cli prettier surge fkill-cli json
-```
-
-### Install PEAR/PECL
-* http://jason.pureconcepts.net/2012/10/install-pear-pecl-mac-os-x/
-```sh
-
-curl -O http://pear.php.net/go-pear.phar
-sudo php -d detect_unicode=0 go-pear.phar
-
-# Type 1 and press return.
-# Enter:
-
-/usr/local/pear
-
-# Type 4 and press return.
-# Enter:
-
-/usr/local/bin
-
-# Press return
-
-pear version
-
 ```
 
 ### Install Yabai
