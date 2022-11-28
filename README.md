@@ -8,16 +8,15 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.7.1
+1.7.3
 
 ### Last Tested on
-MacOS 12.3.1
+MacOS 12.6
 
 ### App Store Applications
 * [Apple Music](https://music.apple.com)
 * [ColorSlurp](https://apps.apple.com/us/app/colorslurp/id1287239339)
 * [Quiver](https://apps.apple.com/us/app/quiver-take-better-notes/id866773894)
-* [Tweetbot](https://tapbots.com/tweetbot/mac/)
 * [Xcode](https://apps.apple.com/us/app/xcode/id497799835)
 
 ### Third Party Applications
@@ -56,13 +55,14 @@ MacOS 12.3.1
 * quicklook-json
 * robo-3t
 * slack
-* stats
 * sublime-text
 * suspicious-package
 * the-unarchiver
 * transmit
 * virtualbox
 * webpquicklook
+
+## DotFiles
 
 ### .vimrc
 * https://github.com/arbitrarily/vimrc
@@ -108,10 +108,9 @@ Fonts are Backed up to Dropbox/Resources/
 
 ### zsh
 ```sh
+
 # sudo apt-get install zsh
 brew install zsh
-sh -c "$(c
-* DaisyDiskurl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Make Default Shell
 chsh -s $(which zsh)
@@ -119,11 +118,15 @@ chsh -s $(which zsh)
 # Install Oh-My-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# Install Oh My ZSH Plugins
+# Install Oh My zsh Plugins
 curl -L https://iterm2.com/shell_integration/zsh \
 -o ~/.iterm2_shell_integration.zsh
 
+# Install zsh Syntax Highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# Install zsh Autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 ### Sublime Text 3 Plugin Installer
@@ -283,8 +286,10 @@ http://python-guide-pt-br.readthedocs.io/en/latest/starting/install3/osx/
 
 brew install python3
 # python3 for python3 command line
+```
 
 # Common Programs
+```sh
 brew install ack autojump automake bash-completion bat colordiff cmus cmusfm curl exa fd ffmpeg gifsicle git httpie icoutils imagemagick itermocil jq libmemcached libxml2 memcached neofetch openssl ossp-uuid qt readline ripgrep terminal-notifier wget wp-cli yabai yarn youtube-dl z
 ```
 
@@ -330,10 +335,6 @@ brew install 1password alfred arduino bartender blender bpytop discord dropbox e
 # Install Quick Look Plugins (preview code etc)
 brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package apparency quicklookase qlvideo
 ```
-
-### Install Docker
-* https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac
-* https://docs.docker.com/compose/install/
 
 ### Alfred Cask Link
 ```sh
