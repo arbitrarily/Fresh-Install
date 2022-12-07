@@ -8,7 +8,7 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.7.2
+1.7.3
 
 ### Last Tested on
 MacOS 12.5.1
@@ -19,6 +19,7 @@ MacOS 12.5.1
 * [Quiver](https://apps.apple.com/us/app/quiver-take-better-notes/id866773894)
 * [Tweetbot](https://tapbots.com/tweetbot/mac/)
 * [Xcode](https://apps.apple.com/us/app/xcode/id497799835)
+** `sudo xcodebuild -license accept`
 
 ### Third Party Applications
 * [Adobe Acrobat](https://www.adobe.com/creativecloud.html)
@@ -177,6 +178,12 @@ Plugins to install via Package Control:
 * TypeScript Syntax
 * zzz A File Icon zzz
 
+### Sublime Text Themes
+Theme: `Monokai Pro`
+UI Color Scheme: `Monokai Pro`
+
+Previously: `Spacegray Eighties`
+
 ### iTerm Colors
 * https://github.com/mbadolato/iTerm2-Color-Schemes
 
@@ -192,6 +199,7 @@ ls -al ~/.ssh
 ssh-keygen -t rsa -C "your_email@example.com"
 
 # Copy
+keys # shortcut
 pbcopy < ~/.ssh/id_rsa.pub
 
 # Test if worked
@@ -247,7 +255,7 @@ defaults write com.apple.screencapture location ~/Screenshots
 killall SystemUIServer
 
 # Add Message to Login Screen
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "In case of loss, please call ###-###-####"
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "In found, please call ###-###-####"
 
 # Make Sublime Default Text Editor
 defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.sublimetext.3;}'
