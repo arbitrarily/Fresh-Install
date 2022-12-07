@@ -8,7 +8,7 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.7.3
+1.7.4
 
 ### Last Tested on
 MacOS 12.5.1
@@ -67,6 +67,9 @@ MacOS 12.5.1
 ### .vimrc
 * https://github.com/arbitrarily/vimrc
 
+### .gitconfig
+* https://github.com/arbitrarily/gitconfig
+
 ### .zshrc (primary)
 * https://github.com/arbitrarily/zshrc
 
@@ -101,6 +104,8 @@ ln -s ~/Git/skhdrc/.skhdrc ~/.skhdrc
 ln -s ~/Git/yabairc/.yabairc ~/.yabairc
 # vimrc
 ln -s ~/Git/vimrc/vimrc ~/.vimrc
+# gitconfig
+ln -s ~/Git/gitconfig/.gitconfig ~/.gitconfig
 ```
 
 ### Fonts
