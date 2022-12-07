@@ -8,10 +8,10 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.7.1
+1.7.2
 
 ### Last Tested on
-MacOS 12.3.1
+MacOS 12.5.1
 
 ### App Store Applications
 * [Apple Music](https://music.apple.com)
@@ -25,7 +25,6 @@ MacOS 12.3.1
 * [Adobe Illustrator](https://www.adobe.com/creativecloud.html)
 * [Adobe Photoshop](https://www.adobe.com/creativecloud.html)
 * [Adobe Aftereffects](https://www.adobe.com/creativecloud.html)
-* [Google Drive](https://www.google.com/intl/en_fj/drive/download/)
 
 ### Homebrew Cask Applications
 * 1password
@@ -46,6 +45,7 @@ MacOS 12.3.1
 * insomnia
 * iterm2
 * kodi
+* google-drive
 * little-snitch
 * qlcolorcode
 * qlmarkdown
@@ -56,7 +56,6 @@ MacOS 12.3.1
 * quicklook-json
 * robo-3t
 * slack
-* stats
 * sublime-text
 * suspicious-package
 * the-unarchiver
@@ -135,32 +134,48 @@ Plugins to install via Package Control:
 * A File Icon
 * Alignment
 * All Autocomplete
+* ApacheConf
 * AutoFileName
 * AutoSetSyntax
 * Babel
 * Better JavaScript
 * BracketHighlighter
 * Color Highlighter
-* Dockerfile Syntax Highlighting
 * DotENV
 * EditorConfig
-* File Icons Mono
+* Ethereum
 * GitGutter
 * GitOpenChangedFiles
 * HTML-CSS-JS Prettify
+* ImagePreview
+* IntelliDocs
 * JsPrettier
-* Liquid-HTML
+* Liquid
 * LSP
-* LSP-stylelint
+* LSP-css
 * LSP-eslint
+* LSP-html
+* LSP-intelephense
+* LSP-pylsp
+* LSP-stylelint
+* LSP-typescript
+* Monokai - Spacegray
 * Monokai Extended
 * nginx
-* Pretty JSON
+* Pane Pane
+* rsub
 * Sass
 * SassBeautify
 * SidebarEnhancement
 * SublimeLinter
+* SublimeLinter-eslint
+* SublimeLinter-jshint
+* SublimeLinter-php
+* Tagify
 * Theme - Spacegray
+* Theme - Monokai Pro
+* TypeScript Syntax
+* zzz A File Icon zzz
 
 ### iTerm Colors
 * https://github.com/mbadolato/iTerm2-Color-Schemes
@@ -285,10 +300,10 @@ brew install python3
 # python3 for python3 command line
 
 # Common Programs
-brew install ack autojump automake bash-completion bat colordiff cmus cmusfm curl exa fd ffmpeg gifsicle git httpie icoutils imagemagick itermocil jq libmemcached libxml2 memcached neofetch openssl ossp-uuid qt readline ripgrep terminal-notifier wget wp-cli yabai yarn youtube-dl z
+brew install ack autojump automake bash-completion bat colordiff cmus cmusfm curl exa fd ffmpeg gifsicle git google-drive httpie icoutils imagemagick itermocil jq libmemcached libxml2 memcached neofetch openssl ossp-uuid qt readline ripgrep terminal-notifier wget wp-cli yabai yarn youtube-dl z
 ```
 
-### Install PHP from Homebrew
+### Install Latest PHP from Homebrew
 ```sh
 brew update && brew upgrade
 brew untap homebrew/php
@@ -371,7 +386,7 @@ brew install mongodb
 ### NPM Stuff
 ```sh
 # Install NPM Packages
-npm install -g eslint eslint-cli eslint-plugin-prettier gatsby-cli grunt-cli gulp-cli is-up-cli prettier surge fkill-cli json
+npm install -g eslint eslint-cli eslint-plugin-prettier gatsby-cli grunt-cli gulp-cli is-up-cli prettier surge fkill-cli json typescript typescript-language-server
 ```
 
 ### Install Yabai
