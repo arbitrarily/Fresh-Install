@@ -8,7 +8,7 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.7.4
+1.7.5
 
 ### Last Tested on
 MacOS 12.5.1
@@ -62,6 +62,7 @@ MacOS 12.5.1
 * the-unarchiver
 * transmit
 * virtualbox
+* visual-studio-code
 * webpquicklook
 
 ### .vimrc
@@ -84,6 +85,9 @@ MacOS 12.5.1
 
 ### Sublime Text Preferences
 * https://github.com/arbitrarily/sublime-settings
+
+### Visual Studio Code Preferences
+* https://github.com/arbitrarily/vs-code-settings
 
 ### cmus Theme
 * https://github.com/arbitrarily/cmus-theme
@@ -182,6 +186,28 @@ Plugins to install via Package Control:
 * Theme - Monokai Pro
 * TypeScript Syntax
 * zzz A File Icon zzz
+
+### Visual Studio Code Plugins
+* [Auto Hide](https://marketplace.visualstudio.com/items?itemName=sirmspencer.vscode-autohide)
+* [ChatGPT](https://marketplace.visualstudio.com/items?itemName=timkmecl.chatgpt)
+* [colorize](https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize)
+* [Debugger for Firefox](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug)
+* [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+* [ES7+ React/Redux/React-Native](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+* [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+* [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+* [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+* [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
+* [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
+* [Monokai Pro New KC](https://marketplace.visualstudio.com/items?itemName=kvncnls.monokai-pro-new-kc)
+* [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+* [PHP IntelliSense](https://marketplace.visualstudio.com/items?itemName=zobo.php-intellisense)
+* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* [Solidity](https://marketplace.visualstudio.com/items?itemName=NomicFoundation.hardhat-solidity)
+* [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+* [Vue Language Features (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
 ### Sublime Text Themes
 Theme: `Monokai Pro`
@@ -353,7 +379,7 @@ brew install koekeishiya/formulae/skhd
 brew tap shopify/shopify
 
 # Cask Applications
-brew install 1password alfred arduino bartender blender bpytop discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim iina insomnia lastfm little-snitch mimestream querious robo-3t slack sublime-text sublime-merge the-unarchiver
+brew install 1password alfred arduino bartender blender bpytop discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim iina insomnia lastfm little-snitch mimestream querious robo-3t slack sublime-text sublime-merge visual-studio-code the-unarchiver
 
 # Install Quick Look Plugins (preview code etc)
 brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package apparency quicklookase qlvideo
