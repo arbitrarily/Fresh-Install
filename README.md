@@ -8,7 +8,7 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.7.5
+1.7.6
 
 ### Last Tested on
 MacOS 12.5.1
@@ -17,9 +17,8 @@ MacOS 12.5.1
 * [Apple Music](https://music.apple.com)
 * [ColorSlurp](https://apps.apple.com/us/app/colorslurp/id1287239339)
 * [Quiver](https://apps.apple.com/us/app/quiver-take-better-notes/id866773894)
-* [Tweetbot](https://tapbots.com/tweetbot/mac/)
 * [Xcode](https://apps.apple.com/us/app/xcode/id497799835)
-** `sudo xcodebuild -license accept`
+  * `sudo xcodebuild -license accept`
 
 ### Third Party Applications
 * [Adobe Acrobat](https://www.adobe.com/creativecloud.html)
@@ -32,7 +31,6 @@ MacOS 12.5.1
 * alfred
 * appcleaner
 * bartender
-* blender
 * discord
 * dropbox
 * eloston-chromium
@@ -65,38 +63,20 @@ MacOS 12.5.1
 * visual-studio-code
 * webpquicklook
 
-### .vimrc
-* https://github.com/arbitrarily/vimrc
+### DotFiles (mac)
+* `.vimrc` https://github.com/arbitrarily/vimrc
+* `.gitconfig` https://github.com/arbitrarily/gitconfig
+* `.zshrc` (primary) https://github.com/arbitrarily/zshrc
+* `.yabairc` https://github.com/arbitrarily/yabairc
+* `.skhdrc` (primary) https://github.com/arbitrarily/skhdrc
 
-### .gitconfig
-* https://github.com/arbitrarily/gitconfig
-
-### .zshrc (primary)
-* https://github.com/arbitrarily/zshrc
-
-### .yabairc
-* https://github.com/arbitrarily/yabairc
-
-### .skhdrc (primary)
-* https://github.com/arbitrarily/skhdrc
-
-### firefox new tab loading page
-* https://github.com/arbitrarily/firefox-new-tab
-
-### Sublime Text Preferences
-* https://github.com/arbitrarily/sublime-settings
-
-### Visual Studio Code Preferences
-* https://github.com/arbitrarily/vs-code-settings
-
-### cmus Theme
-* https://github.com/arbitrarily/cmus-theme
-
-### Neofetch Settings
-* https://github.com/arbitrarily/neofetch-settings
-
-### Nowplaying
-* https://github.com/arbitrarily/nowplaying
+### Settings & Configs
+* `Neofetch Settings` https://github.com/arbitrarily/neofetch-settings
+* `Firefox New Tab Loading Page` https://github.com/arbitrarily/firefox-new-tab
+* `Sublime Text Preferences` https://github.com/arbitrarily/sublime-settings
+* `Visual Studio Code Preferences` https://github.com/arbitrarily/vs-code-settings
+* `cmus Theme` https://github.com/arbitrarily/cmus-theme
+* `Nowplaying` https://github.com/arbitrarily/nowplaying
 
 ### Link Dotfiles
 ```sh
@@ -113,7 +93,7 @@ ln -s ~/Git/gitconfig/.gitconfig ~/.gitconfig
 ```
 
 ### Fonts
-Fonts are Backed up to Dropbox/Resources/
+Fonts are Backed up to **/Dropbox/Resources**
 
 ### zsh
 ```sh
@@ -212,8 +192,13 @@ Plugins to install via Package Control:
 ### Sublime Text Themes
 Theme: `Monokai Pro`
 UI Color Scheme: `Monokai Pro`
+Font: `Hack Nerd Font`
 
 Previously: `Spacegray Eighties`
+
+### Visual Studio Themes
+Theme: `Monokai Pro New KC`
+Font: `'Hack Nerd Font', 'Hack', 'Fira Mono', Menlo Bold, Monaco, 'Courier New', monospace`
 
 ### iTerm Colors
 * https://github.com/mbadolato/iTerm2-Color-Schemes
@@ -251,7 +236,6 @@ git config --global color.ui true
 ### Set Hostname
 ```sh
 sudo scutil --set HostName ###
-
 ```
 
 ### Set Up Mac OS X Preferences
@@ -331,13 +315,8 @@ brew doctor
 brew tap homebrew/cask-cask-fonts
 ```
 
-### Install Python 3
+### Install Common Programs
 ```sh
-http://python-guide-pt-br.readthedocs.io/en/latest/starting/install3/osx/
-
-brew install python3
-# python3 for python3 command line
-
 # Common Programs
 brew install ack autojump automake bash-completion bat colordiff cmus cmusfm curl exa fd ffmpeg gifsicle git google-drive httpie icoutils imagemagick itermocil jq libmemcached libxml2 memcached neofetch openssl ossp-uuid qt readline ripgrep terminal-notifier wget wp-cli yabai yarn youtube-dl z
 ```
@@ -354,7 +333,6 @@ brew cleanup
 brew doctor
 
 export PATH=”$(brew — prefix homebrew/php/php8X)/bin:$PATH”
-
 ```
 
 Just remember to change the `X` in the PHP version in the last export line to whatever the latest one you're using is.
@@ -379,20 +357,15 @@ brew install koekeishiya/formulae/skhd
 brew tap shopify/shopify
 
 # Cask Applications
-brew install 1password alfred arduino bartender blender bpytop discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim iina insomnia lastfm little-snitch mimestream querious robo-3t slack sublime-text sublime-merge visual-studio-code the-unarchiver
+brew install 1password alfred arduino bartender bpytop discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim iina insomnia lastfm little-snitch mimestream querious robo-3t slack sublime-text sublime-merge visual-studio-code the-unarchiver
 
 # Install Quick Look Plugins (preview code etc)
 brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package apparency quicklookase qlvideo
 ```
 
-### Install Docker
-* https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac
-* https://docs.docker.com/compose/install/
-
-### Alfred Cask Link
+### Install Alfred Cask Link
 ```sh
 brew cask alfred link
-
 ```
 
 ### Install MySQL
@@ -447,6 +420,10 @@ brew services start yabai
 
 killall Dock
 ```
+
+### Install Docker
+* https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac
+* https://docs.docker.com/compose/install/
 
 ### Marko Bajlovic
 * https://marko.tech
