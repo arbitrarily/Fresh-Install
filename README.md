@@ -8,7 +8,7 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.7.7
+1.7.8
 
 ### Last Tested on
 MacOS 12.5.1
@@ -302,6 +302,30 @@ defaults write com.apple.dock persistent-others -array-add '{ "tile-data" = { "l
 
 # Just in Case: Revert Dock to Default
 defaults write com.apple.dock static-only -bool false; killall Dock
+
+# Opt-out from Siri data collection
+defaults write com.apple.assistant.support 'Siri Data Sharing Opt-In Status' -int 2
+
+# Disable 'Ask Siri'
+defaults write com.apple.assistant.support 'Assistant Enabled' -bool false
+
+# Disable Siri voice feedback
+defaults write com.apple.assistant.backedup 'Use device speaker for TTS' -int 3
+
+# Disable 'Do you want to enable Siri?' pop-up
+defaults write com.apple.SetupAssistant 'DidSeeSiriSetup' -bool True
+
+# Hide Siri from menu bar
+defaults write com.apple.Siri 'StatusMenuVisible' -bool false
+defaults write com.apple.Siri 'UserHasDeclinedEnable' -bool true
+
+# Disable Siri services (Siri and assistantd)
+launchctl disable "user/$UID/com.apple.assistantd"
+launchctl disable "gui/$UID/com.apple.assistantd"
+sudo launchctl disable 'system/com.apple.assistantd'
+launchctl disable "user/$UID/com.apple.Siri.agent"
+launchctl disable "gui/$UID/com.apple.Siri.agent"
+sudo launchctl disable 'system/com.apple.Siri.agent'
 
 ```
 
