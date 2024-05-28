@@ -8,10 +8,10 @@ Quote time:
 ― George Bernard Shaw
 
 ### Version
-1.7.8
+1.8.0
 
 ### Last Tested on
-MacOS 12.5.1
+MacOS 14.3.1
 
 ### App Store Applications
 * [Apple Music](https://music.apple.com)
@@ -25,58 +25,72 @@ MacOS 12.5.1
 * [Adobe Illustrator](https://www.adobe.com/creativecloud.html)
 * [Adobe Photoshop](https://www.adobe.com/creativecloud.html)
 * [Adobe Aftereffects](https://www.adobe.com/creativecloud.html)
+* [GPT4All](https://gpt4all.io/index.html)
+* [StartyParty](https://marketing.startyparty.dev/) for firefox, made by me
+* [StartyParty Addons](https://github.com/arbitrarily/startyparty-addons)
 
 ### Homebrew Cask Applications
-* 1password
-* alfred
-* appcleaner
-* bartender
-* discord
-* dropbox
-* eloston-chromium
-* figma
-* firefox-developer-edition
-* font-hack
-* font-hack-nerd-font
-* iconjar
-* imageoptim
-* iina
-* insomnia
-* iterm2
-* kodi
-* google-drive
-* little-snitch
-* qlcolorcode
-* qlmarkdown
-* qlprettypatch
-* qlstephen
-* querious
-* quicklook-csv
-* quicklook-json
-* robo-3t
-* slack
-* sublime-text
-* suspicious-package
-* the-unarchiver
-* transmit
-* virtualbox
-* visual-studio-code
-* webpquicklook
+* `1password7` (1Password) Password manager that keeps all passwords secure behind one password
+* `alfred` (Alfred) Application launcher and productivity software
+* `anaconda` (Anaconda Distribution) Distribution of the Python and R programming languages for scientific computing
+* `apparency` (Apparency) Inspect application bundles
+* `appcleaner` (FreeMacSoft AppCleaner) Application uninstaller
+* `bartender` (Bartender) Menu bar icon organiser
+* `discord` (Discord) Voice and text chat software
+* `dropbox` (Dropbox) Client for the Dropbox cloud storage service
+* `eloston-chromium` (Ungoogled Chromium) Google Chromium, sans integration with Google
+* `figma` (Figma) Collaborative team software
+* `firefox` (Mozilla Firefox) Web browser
+* `firefox-developer-edition` (Mozilla Firefox Developer Edition) Web browser
+* `font-hack-nerd-font` (Hack Nerd Font (Hack)) Developer targeted fonts with a high number of glyphs
+* `iconjar` (IconJar) Icon organiser
+* `iina` (IINA) Free and open-source media player
+* `imageoptim` (ImageOptim) Tool to optimise images to a smaller size
+* `insomnia` (Insomnia) HTTP and GraphQL Client
+* `iterm2` (iTerm2) Terminal emulator as alternative to Apple's Terminal app
+* `little-snitch` (Little Snitch) Host-based application firewall
+* `lm-studio` (LM Studio) Discover, download, and run local LLMs
+* `mimestream` (Mimestream) Native app email client for Gmail
+* `miniforge` (miniforge) Minimal installer for conda specific to conda-forge
+* `mongodb-compass` (MongoDB Compass) Interactive tool for analyzing MongoDB data
+* `notion` (Notion) App to write, plan, collaborate, and get organised
+* `qlcolorcode` (QLColorCode) Quick Look plug-in that renders source code with syntax highlighting
+* `qlimagesize` (qlImageSize) Display image info and preview unsupported formats in QuickLook
+* `qlmarkdown` (sbarex QLMarkdown) Quick Look generator for Markdown files
+* `qlstephen` (QLStephen) Quick Look plugin for plaintext files without an extension
+* `qlvideo` (QuickLook Video) Thumbnails, static previews, cover art and metadata for video files
+* `querious` (Querious 4) MySQL and compatible databases tool
+* `quicklook-json` (quick look JSON) Quick Look plugin for JSON files
+* `quicklookase` (QuickLookASE) Quick Look generator for Adobe Swatch Exchange files
+* `slack` (Slack) Team communication and collaboration software
+* `sublime-merge` (Sublime Merge) Git client
+* `supercollider` (SuperCollider) Server, language, and IDE for sound synthesis and algorithmic composition
+* `surfshark` (Surfshark) VPN client for secure internet access and private browsing
+* `suspicious-package` (Suspicious Package) Application for inspecting installer packages
+* `syntax-highlight` (Syntax Highlight) Quicklook extension for source files
+* `the-unarchiver` (The Unarchiver) Unpacks archive files
+* `transmit` (Transmit) File transfer application
+* `visual-studio-code` (Microsoft Visual Studio Code, VS Code) Open-source code editor
+* `whatsapp` (WhatsApp) Native desktop client for WhatsApp
+* `zed` (Zed) Multiplayer code editor
 
 ### DotFiles (mac)
-* `.vimrc` https://github.com/arbitrarily/vimrc
-* `.gitconfig` https://github.com/arbitrarily/gitconfig
-* `.zshrc` (primary) https://github.com/arbitrarily/zshrc
-* `.yabairc` https://github.com/arbitrarily/yabairc
-* `.skhdrc` (primary) https://github.com/arbitrarily/skhdrc
+* [`.vimrc`](https://github.com/arbitrarily/vimrc) https://github.com/arbitrarily/vimrc
+* [`.gitconfig`](https://github.com/arbitrarily/gitconfig) https://github.com/arbitrarily/gitconfig
+* [`.zshrc (primary)`](https://github.com/arbitrarily/zshrc) https://github.com/arbitrarily/zshrc
+* [`.yabairc`](https://github.com/arbitrarily/yabairc) https://github.com/arbitrarily/yabairc
+* [`.skhdrc`](https://github.com/arbitrarily/skhdrc) https://github.com/arbitrarily/skhdrc
+* [`.gitconfig`](https://github.com/arbitrarily/gitconfig/blob/master/.gitconfig)  https://github.com/arbitrarily/gitconfig/blob/master/.gitconfig)
 
 ### Settings & Configs
-* `Neofetch Settings` https://github.com/arbitrarily/neofetch-settings
-* `Firefox New Tab Loading Page` https://github.com/arbitrarily/firefox-new-tab
-* `Sublime Text Preferences` https://github.com/arbitrarily/sublime-settings
-* `Visual Studio Code Preferences` https://github.com/arbitrarily/vs-code-settings
-* `cmus Theme` https://github.com/arbitrarily/cmus-theme
-* `Nowplaying` https://github.com/arbitrarily/nowplaying
+* [`Visual Studio Code Preferences`](https://github.com/arbitrarily/vs-code-settings) https://github.com/arbitrarily/vs-code-settings
+* [`Zed Preferences`](https://github.com/arbitrarily/zed-settings) https://github.com/arbitrarily/zed-settings
+* [`iTerm Profile`](https://github.com/arbitrarily/iterm-profile) https://github.com/arbitrarily/iterm-profile
+* [`Firefox CSS`](https://github.com/arbitrarily/firefox-css) https://github.com/arbitrarily/firefox-css
+
+### Scripts
+* [`cmus Theme`](https://github.com/arbitrarily/cmus-theme) https://github.com/arbitrarily/cmus-theme
+* [`Nowplaying`](https://github.com/arbitrarily/nowplaying) https://github.com/arbitrarily/nowplaying
 
 ### Link Dotfiles
 ```sh
@@ -119,95 +133,57 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/Git/zsh-autocomplete
 ```
 
-### Sublime Text 3 Plugin Installer
-
-Just hit **Command + Shift + P** then hit install `Package Control` and we're set to install plugins again.
-
-### Sublime Text Plugins
-Plugins to install via Package Control:
-* A File Icon
-* Alignment
-* All Autocomplete
-* ApacheConf
-* AutoFileName
-* AutoSetSyntax
-* Babel
-* Better JavaScript
-* BracketHighlighter
-* Color Highlighter
-* DotENV
-* EditorConfig
-* Ethereum
-* GitGutter
-* GitOpenChangedFiles
-* HTML-CSS-JS Prettify
-* ImagePreview
-* IntelliDocs
-* JsPrettier
-* Liquid
-* LSP
-* LSP-css
-* LSP-eslint
-* LSP-html
-* LSP-intelephense
-* LSP-pylsp
-* LSP-stylelint
-* LSP-typescript
-* Monokai - Spacegray
-* Monokai Extended
-* nginx
-* Pane Pane
-* rsub
-* Sass
-* SassBeautify
-* SidebarEnhancement
-* SublimeLinter
-* SublimeLinter-eslint
-* SublimeLinter-jshint
-* SublimeLinter-php
-* Tagify
-* Theme - Spacegray
-* Theme - Monokai Pro
-* TypeScript Syntax
-* zzz A File Icon zzz
-
 ### Visual Studio Code Plugins
-* [Auto Hide](https://marketplace.visualstudio.com/items?itemName=sirmspencer.vscode-autohide)
-* [colorize](https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize)
-* [Debugger for Firefox](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug)
-* [Duplicate action](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate)
-* [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-* [ES7+ React/Redux/React-Native](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
-* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-* [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
-* [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-* [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
-* [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
-* [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
-* [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
-* [Monokai Pro New KC](https://marketplace.visualstudio.com/items?itemName=kvncnls.monokai-pro-new-kc)
-* [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
-* [PHP IntelliSense](https://marketplace.visualstudio.com/items?itemName=zobo.php-intellisense)
-* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-* [Select Lines](https://marketplace.visualstudio.com/items?itemName=shazbot.select-lines)
-* [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
-* [Solidity](https://marketplace.visualstudio.com/items?itemName=NomicFoundation.hardhat-solidity)
-* [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
-* [Vue Language Features (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+```sh
+# List Installed Extensions
+code --list-extensions | xargs -L 1 echo code --install-extension
 
-### Sublime Text Themes
-Theme: `Monokai Pro`
-UI Color Scheme: `Monokai Pro`
-Font: `Hack Nerd Font`
+# Install Extensions
+* bmewburn.vscode-intelephense-client
+* davidanson.vscode-markdownlint
+* dbaeumer.vscode-eslint
+* dsznajder.es7-react-js-snippets
+* eamodio.gitlens
+* ecmel.vscode-html-css
+* editorconfig.editorconfig
+* esbenp.prettier-vscode
+* firefox-devtools.vscode-firefox-debug
+* formulahendry.auto-close-tag
+* formulahendry.auto-complete-tag
+* formulahendry.auto-rename-tag
+* github.copilot
+* github.copilot-chat
+* gurumukhi.selected-lines-count
+* kamikillerto.vscode-colorize
+* kvncnls.monokai-pro-new-kc
+* loczek.next-js-ts-snippets
+* mrmlnc.vscode-duplicate
+* ms-python.debugpy
+* ms-python.python
+* ms-python.vscode-pylance
+* ms-toolsai.jupyter
+* ms-toolsai.jupyter-keymap
+* ms-toolsai.jupyter-renderers
+* ms-toolsai.vscode-jupyter-cell-tags
+* ms-toolsai.vscode-jupyter-slideshow
+* ms-vscode.sublime-keybindings
+* nomicfoundation.hardhat-solidity
+* nucllear.vscode-extension-auto-import
+* oderwat.indent-rainbow
+* shazbot.select-lines
+* shd101wyy.markdown-preview-enhanced
+* sirmspencer.vscode-autohide
+* steoates.autoimport
+* vscode-icons-team.vscode-icons
+* vue.volar
+* zignd.html-css-class-completion
+* zobo.php-intellisense
 
-Previously: `Spacegray Eighties`
+```
 
 ### Visual Studio Themes
 Theme: `Monokai Pro New KC`
 Font: `'Hack Nerd Font', 'Hack', 'Fira Mono', Menlo Bold, Monaco, 'Courier New', monospace`
-
-### iTerm Colors
-* https://github.com/mbadolato/iTerm2-Color-Schemes
 
 ### Set Up SSH Keys
 * https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git
@@ -245,6 +221,11 @@ sudo scutil --set HostName ###
 ```
 
 ### Set Up Mac OS X Preferences
+
+Some of these may be out of date, have to go through this list and update it.
+
+```sh
+
 ```sh
 # Set a fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 0
@@ -343,26 +324,9 @@ brew doctor
 
 # Install Cask Fonts
 brew tap homebrew/cask-cask-fonts
-```
 
-### Install Common Programs
-```sh
-# Common Programs
-brew install ack autojump automake bash-completion bat colordiff cmus cmusfm curl exa fd ffmpeg gifsicle git google-drive httpie icoutils imagemagick itermocil jq libmemcached libxml2 memcached neofetch openssl ossp-uuid qt readline ripgrep terminal-notifier wget wp-cli yabai yarn youtube-dl z
-```
-
-### Install Latest PHP from Homebrew
-```sh
-brew update && brew upgrade
-brew untap homebrew/php
-brew tap homebrew/dupes
-brew tap homebrew/versions
-brew tap homebrew/homebrew-php
-brew install php
-brew cleanup
-brew doctor
-
-export PATH=”$(brew — prefix homebrew/php/php8X)/bin:$PATH”
+# Dump Brews to File
+brew ls --casks | xargs brew desc --eval-all
 ```
 
 Just remember to change the `X` in the PHP version in the last export line to whatever the latest one you're using is.
@@ -385,12 +349,6 @@ brew install koekeishiya/formulae/skhd
 
 # Shopify
 brew tap shopify/shopify
-
-# Cask Applications
-brew install 1password alfred arduino bartender bpytop discord dropbox eloston-chromium figma firefox-developer-edition font-hack-nerd-font iterm2 imageoptim iina insomnia lastfm little-snitch mimestream querious robo-3t slack sublime-text sublime-merge visual-studio-code the-unarchiver
-
-# Install Quick Look Plugins (preview code etc)
-brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package apparency quicklookase qlvideo
 ```
 
 ### Install Alfred Cask Link
@@ -398,37 +356,23 @@ brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspici
 brew cask alfred link
 ```
 
-### Install MySQL
-```sh
-# Install
-brew install mysql
-
-# Check & Start
-mysql.server start
-
-# If Installation Failed
-brew remove mysql
-brew cleanup
-sudo rm -rf /usr/local/var/mysql/
-brew install mysql
-mysql.server start
-
-# Check MySQL Info
-brew info mysql
-
-```
-
-### Install MongoDB
-* http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/
-```sh
-brew install mongodb
-
-```
-
 ### NPM Stuff
 ```sh
 # Install NPM Packages
-npm install -g eslint eslint-cli eslint-plugin-prettier gatsby-cli grunt-cli gulp-cli is-up-cli prettier surge fkill-cli json typescript typescript-language-server
+/opt/homebrew/lib
+├── addons-linter@6.27.0
+├── eslint-cli@1.1.1
+├── eslint-plugin-prettier@4.2.1
+├── eslint@8.21.0
+├── fkill-cli@7.1.0
+├── gatsby-cli@4.20.0
+├── is-up-cli@4.0.0
+├── json@11.0.0
+├── npm@10.7.0
+├── prettier@2.7.1
+├── surge@0.23.1
+└── zoom-to-web-link@2.1.1
+
 ```
 
 ### Install Yabai
@@ -451,11 +395,12 @@ brew services start yabai
 killall Dock
 ```
 
-### Install Docker
-* https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac
-* https://docs.docker.com/compose/install/
-
 ### Marko Bajlovic
 * https://marko.tech
+* * https://marko.tech/uses
+* https://startyparty.dev
+* * https://marketingstartyparty.dev
+* https://github.com/arbitrarily
+* https://c.im/@des
 
 Sourced from all over and throughout the years.
