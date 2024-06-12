@@ -2,18 +2,23 @@
 
 The following is a guide I wrote to guide one through a fresh installation on a new machine. Enjoy!
 
+## Setup
+
 Quote time:
 
 > “To be in hell is to drift; to be in heaven is to steer.”
 ― George Bernard Shaw
 
 ### Version
-1.8.1
+
+1.8.2
 
 ### Last Tested on
+
 MacOS 14.3.1
 
 ### App Store Applications
+
 * [Apple Music](https://music.apple.com)
 * [ColorSlurp](https://apps.apple.com/us/app/colorslurp/id1287239339)
 * [Quiver](https://apps.apple.com/us/app/quiver-take-better-notes/id866773894)
@@ -21,6 +26,7 @@ MacOS 14.3.1
   * `sudo xcodebuild -license accept`
 
 ### Third Party Applications
+
 * [Adobe Acrobat](https://www.adobe.com/creativecloud.html)
 * [Adobe Illustrator](https://www.adobe.com/creativecloud.html)
 * [Adobe Photoshop](https://www.adobe.com/creativecloud.html)
@@ -30,15 +36,19 @@ MacOS 14.3.1
 * [StartyParty Addons](https://github.com/arbitrarily/startyparty-addons)
 
 ### Homebrew Cask Applications
+
 * [blob/master/dumps/brew-cask.md](brew-cask.md)
 
 ### Homebrew Packages
+
 * [blob/master/dumps/brew-packages.md](brew-packages.md)
 
 ### Global NPM Packages
+
 * [blob/master/dumps/npm-global.md](npm-global.md)
 
 ### VS Code Extensions
+
 * [blob/master/dumps/vscode-extensions.md](vscode-extensions.md)
 
 ```sh
@@ -47,49 +57,64 @@ code --list-extensions | xargs -L 1 echo code --install-extension
 ```
 
 ### DotFiles (mac)
-* [`.vimrc`](https://github.com/arbitrarily/vimrc) https://github.com/arbitrarily/vimrc
+
+* [`.vimrc`](https://github.com/arbitrarily/vimrc) github.com/arbitrarily/vimrc
+
 ```sh
 # vimrc
 ln -s ~/Git/vimrc/vimrc ~/.vimrc
 ```
-* [`.gitconfig`](https://github.com/arbitrarily/gitconfig) https://github.com/arbitrarily/gitconfig
+
+* [`.gitconfig`](https://github.com/arbitrarily/gitconfig) github.com/arbitrarily/gitconfig
+
 ```sh
 # gitconfig
 ln -s ~/Git/gitconfig/.gitconfig ~/.gitconfig
 ```
-* [`.zshrc (primary)`](https://github.com/arbitrarily/zshrc) https://github.com/arbitrarily/zshrc
+
+* [`.zshrc (primary)`](https://github.com/arbitrarily/zshrc) github.com/arbitrarily/zshrc
+
 ```sh
 # zsh
 ln -s ~/Git/zshrc/.zshrc ~/.zshrc
 ```
-* [`.yabairc`](https://github.com/arbitrarily/yabairc) https://github.com/arbitrarily/yabairc
+
+* [`.yabairc`](https://github.com/arbitrarily/yabairc) github.com/arbitrarily/yabairc
+
 ```sh
 # yabairc
 ln -s ~/Git/yabairc/.yabairc ~/.yabairc
 ```
-* [`.skhdrc`](https://github.com/arbitrarily/skhdrc) https://github.com/arbitrarily/skhdrc
+
+* [`.skhdrc`](https://github.com/arbitrarily/skhdrc) github.com/arbitrarily/skhdrc
+
 ```sh
 # skhdrc
 ln -s ~/Git/skhdrc/.skhdrc ~/.skhdrc
 ```
-* [`.gitconfig`](https://github.com/arbitrarily/gitconfig/blob/master/.gitconfig)  https://github.com/arbitrarily/gitconfig/blob/master/.gitconfig)
+
+* [`.gitconfig`](https://github.com/arbitrarily/gitconfig/blob/master/.gitconfig) github.com/arbitrarily/gitconfig/blob/master/.gitconfig
 
 ### Settings & Configs
-* [`Visual Studio Code Preferences`](https://github.com/arbitrarily/vs-code-settings) https://github.com/arbitrarily/vs-code-settings
-* [`Zed Preferences`](https://github.com/arbitrarily/zed-settings) https://github.com/arbitrarily/zed-settings
-* [`iTerm Profile`](https://github.com/arbitrarily/iterm-profile) https://github.com/arbitrarily/iterm-profile
-* [`Firefox CSS`](https://github.com/arbitrarily/firefox-css) https://github.com/arbitrarily/firefox-css
+
+* [`Visual Studio Code Preferences`](https://github.com/arbitrarily/vs-code-settings) github.com/arbitrarily/vs-code-settings
+* [`Zed Preferences`](https://github.com/arbitrarily/zed-settings) github.com/arbitrarily/zed-settings
+* [`iTerm Profile`](https://github.com/arbitrarily/iterm-profile) github.com/arbitrarily/iterm-profile
+* [`Firefox CSS`](https://github.com/arbitrarily/firefox-css) github.com/arbitrarily/firefox-css
 
 ### Scripts
-* [`cmus Theme`](https://github.com/arbitrarily/cmus-theme) https://github.com/arbitrarily/cmus-theme
-* [`Nowplaying`](https://github.com/arbitrarily/nowplaying) https://github.com/arbitrarily/nowplaying
+
+* [`cmus Theme`](https://github.com/arbitrarily/cmus-theme) github.com/arbitrarily/cmus-theme
+* [`Nowplaying`](https://github.com/arbitrarily/nowplaying) github.com/arbitrarily/nowplaying
 
 ### Fonts
+
 Fonts are Backed up to **/Dropbox/Resources**
 
-* [`Nerd Fonts`](https://github.com/ryanoasis/nerd-fonts) https://github.com/ryanoasis/nerd-fonts
+* [`Nerd Fonts`](https://github.com/ryanoasis/nerd-fonts) github.com/ryanoasis/nerd-fonts
 
 ### zsh
+
 ```sh
 # Install Oh-My-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -100,6 +125,7 @@ curl -L https://iterm2.com/shell_integration/zsh \
 ```
 
 ### Set Up SSH Keys
+
 * https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git
 * https://help.github.com/articles/generating-ssh-keys/
 
@@ -116,6 +142,7 @@ ssh -T git@github.com
 ```
 
 ### Set Up Git
+
 ```sh
 git config --global user.name "Name"
 git config --global user.email email@email.com
@@ -127,11 +154,14 @@ git config --global color.ui true
 ```
 
 ### Set Hostname
+
 ```sh
 sudo scutil --set HostName ###
 ```
 
+
 ### Set Up Mac OS X Preferences
+
 
 Some of these may be out of date, have to go through this list and update it.
 
@@ -167,6 +197,7 @@ killall SystemUIServer
 
 # Add Message to Login Screen
 sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "In found, please call ###-###-####"
+
 
 # Enable Text Selection in QuickLook
 defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
@@ -213,12 +244,15 @@ sudo launchctl disable 'system/com.apple.Siri.agent'
 ```
 
 ### Install Xcode
-* https://itunes.apple.com/au/app/xcode/id497799835?mt=12
+
+* [https://itunes.apple.com/au/app/xcode/id497799835?mt=12](itunes.apple.com/au/app/xcode/id497799835?mt=12)
+
 ```sh
 xcode-select --install
 ```
 
 ### Install Homebrew
+
 ```sh
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -234,6 +268,7 @@ brew ls --casks | xargs brew desc --eval-all
 Just remember to change the `X` in the PHP version in the last export line to whatever the latest one you're using is.
 
 ### Install Apps Via Homebrew Cask
+
 
 ```sh
 # Install Fonts
@@ -254,14 +289,17 @@ brew tap shopify/shopify
 ```
 
 ### Install Alfred Cask Link
+
 ```sh
 brew cask alfred link
 ```
 
 ### Install Yabai
+
 Install Yabai Window Manager
 
 First disable SIP:
+
 ```bash
 csrutil disable
 ```
@@ -279,6 +317,7 @@ killall Dock
 ```
 
 ### Marko Bajlovic
+
 * https://marko.tech
 * * https://marko.tech/uses
 * https://startyparty.dev

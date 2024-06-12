@@ -1,9 +1,11 @@
 1password7: (1Password) Password manager that keeps all passwords secure behind one password
 alfred: (Alfred) Application launcher and productivity software
+alt-tab: (AltTab) Enable Windows-like alt-tab
 anaconda: (Anaconda Distribution) Distribution of the Python and R programming languages for scientific computing
 apparency: (Apparency) Inspect application bundles
 appcleaner: (FreeMacSoft AppCleaner) Application uninstaller
 bartender: (Bartender) Menu bar icon organiser
+chromedriver: (ChromeDriver) Automated testing of webapps for Google Chrome
 discord: (Discord) Voice and text chat software
 dropbox: (Dropbox) Client for the Dropbox cloud storage service
 eloston-chromium: (Ungoogled Chromium) Google Chromium, sans integration with Google
