@@ -11,7 +11,7 @@ Quote time:
 
 ### Version
 
-1.8.2
+1.9.0
 
 ### Last Tested on
 
@@ -19,93 +19,33 @@ MacOS 14.3.1
 
 ### App Store Applications
 
-* [Apple Music](https://music.apple.com)
-* [ColorSlurp](https://apps.apple.com/us/app/colorslurp/id1287239339)
-* [Quiver](https://apps.apple.com/us/app/quiver-take-better-notes/id866773894)
 * [Xcode](https://apps.apple.com/us/app/xcode/id497799835)
   * `sudo xcodebuild -license accept`
 
 ### Third Party Applications
 
-* [Adobe Acrobat](https://www.adobe.com/creativecloud.html)
-* [Adobe Illustrator](https://www.adobe.com/creativecloud.html)
-* [Adobe Photoshop](https://www.adobe.com/creativecloud.html)
-* [Adobe Aftereffects](https://www.adobe.com/creativecloud.html)
 * [GPT4All](https://gpt4all.io/index.html)
 * [StartyParty](https://marketing.startyparty.dev/) for firefox, made by me
 * [StartyParty Addons](https://github.com/arbitrarily/startyparty-addons)
-
-### Homebrew Cask Applications
-
-* [blob/master/dumps/brew-cask.md](brew-cask.md)
-
-### Homebrew Packages
-
-* [blob/master/dumps/brew-packages.md](brew-packages.md)
-
-### Global NPM Packages
-
-* [blob/master/dumps/npm-global.md](npm-global.md)
-
-### VS Code Extensions
-
-* [blob/master/dumps/vscode-extensions.md](vscode-extensions.md)
 
 ```sh
 # List Installed Extensions
 code --list-extensions | xargs -L 1 echo code --install-extension
 ```
 
-### DotFiles (mac)
+### Dotfiles
 
-* [`.vimrc`](https://github.com/arbitrarily/vimrc) github.com/arbitrarily/vimrc
+Majority of configurations are stored in my [dotfiles](https://github.com/arbitrarily/dotfiles) repository; currently a private repository.
 
-```sh
-# vimrc
-ln -s ~/Git/vimrc/vimrc ~/.vimrc
-```
+* [`Dotfiles`](https://github.com/arbitrarily/dotfiles) github.com/arbitrarily/dotfiles
 
-* [`.gitconfig`](https://github.com/arbitrarily/gitconfig) github.com/arbitrarily/gitconfig
+### Non Dotfile Settings & Configs
 
-```sh
-# gitconfig
-ln -s ~/Git/gitconfig/.gitconfig ~/.gitconfig
-```
-
-* [`.zshrc (primary)`](https://github.com/arbitrarily/zshrc) github.com/arbitrarily/zshrc
-
-```sh
-# zsh
-ln -s ~/Git/zshrc/.zshrc ~/.zshrc
-```
-
-* [`.yabairc`](https://github.com/arbitrarily/yabairc) github.com/arbitrarily/yabairc
-
-```sh
-# yabairc
-ln -s ~/Git/yabairc/.yabairc ~/.yabairc
-```
-
-* [`.skhdrc`](https://github.com/arbitrarily/skhdrc) github.com/arbitrarily/skhdrc
-
-```sh
-# skhdrc
-ln -s ~/Git/skhdrc/.skhdrc ~/.skhdrc
-```
-
-* [`.gitconfig`](https://github.com/arbitrarily/gitconfig/blob/master/.gitconfig) github.com/arbitrarily/gitconfig/blob/master/.gitconfig
-
-### Settings & Configs
-
-* [`Visual Studio Code Preferences`](https://github.com/arbitrarily/vs-code-settings) github.com/arbitrarily/vs-code-settings
-* [`Zed Preferences`](https://github.com/arbitrarily/zed-settings) github.com/arbitrarily/zed-settings
-* [`iTerm Profile`](https://github.com/arbitrarily/iterm-profile) github.com/arbitrarily/iterm-profile
 * [`Firefox CSS`](https://github.com/arbitrarily/firefox-css) github.com/arbitrarily/firefox-css
 
 ### Scripts
 
 * [`cmus Theme`](https://github.com/arbitrarily/cmus-theme) github.com/arbitrarily/cmus-theme
-* [`Nowplaying`](https://github.com/arbitrarily/nowplaying) github.com/arbitrarily/nowplaying
 
 ### Fonts
 
@@ -126,8 +66,7 @@ curl -L https://iterm2.com/shell_integration/zsh \
 
 ### Set Up SSH Keys
 
-* https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git
-* https://help.github.com/articles/generating-ssh-keys/
+* <https://help.github.com/articles/generating-ssh-keys/>
 
 ```sh
 # Generate SSH
@@ -159,9 +98,7 @@ git config --global color.ui true
 sudo scutil --set HostName ###
 ```
 
-
 ### Set Up Mac OS X Preferences
-
 
 Some of these may be out of date, have to go through this list and update it.
 
@@ -253,39 +190,24 @@ xcode-select --install
 
 ### Install Homebrew
 
+* [https://brew.sh/](https://brew.sh/)
+
 ```sh
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-brew doctor
-
-# Install Cask Fonts
-brew tap homebrew/cask-cask-fonts
-
-# Dump Brews to File
-brew ls --casks | xargs brew desc --eval-all
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Just remember to change the `X` in the PHP version in the last export line to whatever the latest one you're using is.
-
 ### Install Apps Via Homebrew Cask
-
 
 ```sh
 # Install Fonts
 brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 
-# iTermocil
-brew install TomAnthony/brews/itermocil
-
 # Yabai
 brew install koekeishiya/formulae/yabai
 
 # shkd
 brew install koekeishiya/formulae/skhd
-
-# Shopify
-brew tap shopify/shopify
 ```
 
 ### Install Alfred Cask Link
@@ -318,11 +240,11 @@ killall Dock
 
 ### Marko Bajlovic
 
-* https://marko.tech
-* * https://marko.tech/uses
-* https://startyparty.dev
-* * https://marketingstartyparty.dev
-* https://github.com/arbitrarily
-* https://c.im/@des
+* <https://marko.tech>
+* * <https://marko.tech/uses>
+* <https://startyparty.dev>
+* * <https://marketing.startyparty.dev>
+* <https://github.com/arbitrarily>
+* <https://c.im/@des>
 
 Sourced from all over and throughout the years.
