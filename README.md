@@ -2,62 +2,55 @@
 
 The following is a guide I wrote to guide one through a fresh installation on a new machine. Enjoy!
 
-## Setup
-
 Quote time:
 
 > “To be in hell is to drift; to be in heaven is to steer.”
 ― George Bernard Shaw
 
-### Version
+## Version
+>
+> `1.9.2`
 
-1.9.1
+Last Tested on `MacOS 15.1`
 
-### Last Tested on
-
-MacOS 15.1
-
-### App Store Applications
+## App Store Applications
 
 * [Xcode](https://apps.apple.com/us/app/xcode/id497799835)
   * `sudo xcodebuild -license accept`
 
-### Third Party Applications
+## Third Party Applications
 
 * [GPT4All](https://gpt4all.io/index.html)
 * [Hyperkey](https://hyperkey.app/) Convert the caps lock key or any modifier key to the hyper key, all four modifiers combined: ⌃⌥⌘⇧ The hyper key acts as an additional modifier key that you can use in any app with keyboard shortcuts.
+* [Raycast](https://www.raycast.com/) A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable. I install this with [Homebrew](https://formulae.brew.sh/cask/raycast), just wanted to highlight it here.
 * [StartyParty](https://marketing.startyparty.dev/) for firefox, made by me
 * [StartyParty Addons](https://github.com/arbitrarily/startyparty-addons)
 
-### Hyperkey
-
-![Hyperkey](https://hyperkey.app/assets/images/physicalKeyHyper_Site.png)
-
-### Dotfiles
+## Dotfiles
 
 Majority of configurations are stored in my [dotfiles](https://github.com/arbitrarily/dotfiles) repository; currently a **private** repository.
 
 * [`Dotfiles`](https://github.com/arbitrarily/dotfiles) github.com/arbitrarily/dotfiles
 
-### Non Dotfile Settings & Configs
+## Non Dotfile Settings & Configs
 
 * [`Firefox CSS`](https://github.com/arbitrarily/firefox-css) github.com/arbitrarily/firefox-css
 * [`cmus Theme`](https://github.com/arbitrarily/cmus-theme) github.com/arbitrarily/cmus-theme
 
-### Fonts
+## Fonts
 
 Fonts are Backed up to **/Dropbox/Resources**
 
 * [`Nerd Fonts`](https://github.com/ryanoasis/nerd-fonts) github.com/ryanoasis/nerd-fonts
 
-### zsh
+## zsh
 
 ```sh
 # Install Oh-My-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-### Set Up SSH Keys
+## Set Up SSH Keys
 
 * <https://help.github.com/articles/generating-ssh-keys/>
 
@@ -73,7 +66,7 @@ pbcopy < ~/.ssh/id_rsa.pub
 ssh -T git@github.com
 ```
 
-### Set Up Git
+## Set Up Git
 
 ```sh
 git config --global user.name "Name"
@@ -85,15 +78,17 @@ git config --global core.editor "code ."
 git config --global color.ui true
 ```
 
-### Set Hostname
+`.gitconfig` is contained within the [dotfiles](https://github.com/arbitrarily/dotfiles) repository and contains further **Git** configurations.
+
+## Set Hostname
 
 ```sh
 sudo scutil --set HostName ###
 ```
 
-### Set Up Mac OS X Preferences
+## Set Up Mac OS Preferences
 
-Some of these may be out of date, have to go through this list and update it.
+Commands to customize Mac OS settings and preferences. Pick and choose what you want to change, make sure to run the `killall Finder Dock SystemUIServer` command after changing any settings.
 
 ### Finder
 
@@ -242,13 +237,17 @@ sudo launchctl disable 'system/com.apple.Siri.agent'
 ```sh
 # Just in Case: Revert Dock to Default
 defaults write com.apple.dock static-only -bool false
+```
 
+```sh
 # Restart Finder, Dock, and SystemUIServer
 killall Finder Dock SystemUIServer
 
 ```
 
-### Install Xcode
+---
+
+## Install Xcode
 
 * [https://itunes.apple.com/au/app/xcode/id497799835?mt=12](itunes.apple.com/au/app/xcode/id497799835?mt=12)
 
@@ -256,7 +255,7 @@ killall Finder Dock SystemUIServer
 xcode-select --install
 ```
 
-### Install Homebrew
+## Install Homebrew
 
 * [https://brew.sh/](https://brew.sh/)
 
@@ -264,7 +263,7 @@ xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-### Install Apps Via Homebrew Cask
+## Install Apps Via Homebrew Cask
 
 ```sh
 # Install Fonts
@@ -280,9 +279,11 @@ brew install koekeishiya/formulae/skhd
 code --list-extensions | xargs -L 1 echo code --install-extension
 ```
 
+---
+
 ### Marko Bajlovic
 
 * <https://marko.tech>
 * * <https://marko.tech/uses>
 
-Sourced from all over and throughout the years.
+<small>Sourced from all over and throughout the years.</small>
