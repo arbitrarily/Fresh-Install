@@ -11,11 +11,11 @@ Quote time:
 
 ### Version
 
-1.9.0
+1.9.1
 
 ### Last Tested on
 
-MacOS 14.3.1
+MacOS 15.1
 
 ### App Store Applications
 
@@ -25,26 +25,23 @@ MacOS 14.3.1
 ### Third Party Applications
 
 * [GPT4All](https://gpt4all.io/index.html)
+* [Hyperkey](https://hyperkey.app/) Convert the caps lock key or any modifier key to the hyper key, all four modifiers combined: ⌃⌥⌘⇧ The hyper key acts as an additional modifier key that you can use in any app with keyboard shortcuts.
 * [StartyParty](https://marketing.startyparty.dev/) for firefox, made by me
 * [StartyParty Addons](https://github.com/arbitrarily/startyparty-addons)
 
-```sh
-# List Installed Extensions
-code --list-extensions | xargs -L 1 echo code --install-extension
-```
+### Hyperkey
+
+![Hyperkey](https://hyperkey.app/assets/images/physicalKeyHyper_Site.png)
 
 ### Dotfiles
 
-Majority of configurations are stored in my [dotfiles](https://github.com/arbitrarily/dotfiles) repository; currently a private repository.
+Majority of configurations are stored in my [dotfiles](https://github.com/arbitrarily/dotfiles) repository; currently a **private** repository.
 
 * [`Dotfiles`](https://github.com/arbitrarily/dotfiles) github.com/arbitrarily/dotfiles
 
 ### Non Dotfile Settings & Configs
 
 * [`Firefox CSS`](https://github.com/arbitrarily/firefox-css) github.com/arbitrarily/firefox-css
-
-### Scripts
-
 * [`cmus Theme`](https://github.com/arbitrarily/cmus-theme) github.com/arbitrarily/cmus-theme
 
 ### Fonts
@@ -58,10 +55,6 @@ Fonts are Backed up to **/Dropbox/Resources**
 ```sh
 # Install Oh-My-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Install Oh My ZSH Plugins
-curl -L https://iterm2.com/shell_integration/zsh \
--o ~/.iterm2_shell_integration.zsh
 ```
 
 ### Set Up SSH Keys
@@ -102,6 +95,30 @@ sudo scutil --set HostName ###
 
 Some of these may be out of date, have to go through this list and update it.
 
+### Finder
+
+```sh
+# Show hidden files in Finder
+defaults write com.apple.finder AppleShowAllFiles YES
+
+# Show the ~/Library folder
+chflags nohidden ~/Library
+
+# Finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Finder: show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Finder: show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+
+# When performing a search, search the current folder by default
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+```
+
+### Global
+
 ```sh
 # Set a fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 0
@@ -109,11 +126,10 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 # Set a shorter delay until key repeat
 defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
-# Remove Animations
-defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
-
-# Hide the Desktop
-defaults write com.apple.finder CreateDesktop false; killall Finder
+# Store screenshots in subfolder on desktop
+mkdir ~/Screenshots
+defaults write com.apple.screencapture location ~/Screenshots
+killall SystemUIServer
 
 # Skip Verify Images
 defaults write com.apple.frameworks.diskimages skip-verify true
@@ -121,38 +137,80 @@ defaults write com.apple.frameworks.diskimages skip-verify true
 # Prevent Apple Character Press and Hold
 defaults write -g ApplePressAndHoldEnabled -bool false
 
+# Enable Text Selection in QuickLook
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE
+
+# Disable the warning before emptying the Trash
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+# Disable shadow in screenshots
+defaults write com.apple.screencapture disable-shadow -bool TRUE
+```
+
+### Dock
+
+```sh
+
+# Remove Animations
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
+
+# Hide the Desktop
+defaults write com.apple.finder CreateDesktop false
+
+# Set the size of the icons on the dock
+defaults write com.apple.dock tilesize -int 54
+
+# Clear out the dock of default icons
+defaults delete com.apple.dock persistent-apps
+defaults delete com.apple.dock persistent-others
+
+# Faster Dock Animation
+defaults write com.apple.dock autohide-time-modifier -float 0.15
+
+# Dull Hidden Apps in Dock
+defaults write com.apple.Dock showhidden -bool TRUE
+
+# Make Dock only Show Active Apps
+defaults write com.apple.dock static-only -bool true
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
+# Don’t show recent applications in Dock
+defaults write com.apple.dock show-recents -bool false
+
+# Dont' show indicator lights for open applications in the Dock
+defaults write com.apple.dock show-process-indicators -bool false
+```
+
+### Dashboard & Spaces
+
+```sh
+
 # Add a contextual menu item to show the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
-# Show the ~/Library folder
-chflags nohidden ~/Library
+# Don’t show Dashboard as a Space
+defaults write com.apple.dock dashboard-in-overlay -bool true
 
-# Store screenshots in subfolder on desktop
-mkdir ~/Screenshots
-defaults write com.apple.screencapture location ~/Screenshots
-killall SystemUIServer
-
-# Add Message to Login Screen
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "In found, please call ###-###-####"
-
-
-# Enable Text Selection in QuickLook
-defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
-
-# Faster Dock Animation
-defaults write com.apple.dock autohide-time-modifier -float 0.15; killall Dock
-
-# Dull Hidden Apps in Dock
-defaults write com.apple.Dock showhidden -bool TRUE; killall Dock
+# Automatically rearrange Spaces based on most recent use FALSE
+defaults write com.apple.dock mru-spaces -bool false
 
 # Disable Dashboard
 defaults write com.apple.dashboard mcx-disabled -bool true
+```
 
-# Make Dock only Show Active Apps
-defaults write com.apple.dock static-only -bool true; killall Dock
+### Login Screen
 
-# Just in Case: Revert Dock to Default
-defaults write com.apple.dock static-only -bool false; killall Dock
+```sh
+# Add Message to Login Screen
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "In found, please call ###-###-####"
+
+```
+
+### Siri
+
+```sh
 
 # Opt-out from Siri data collection
 defaults write com.apple.assistant.support 'Siri Data Sharing Opt-In Status' -int 2
@@ -177,6 +235,16 @@ sudo launchctl disable 'system/com.apple.assistantd'
 launchctl disable "user/$UID/com.apple.Siri.agent"
 launchctl disable "gui/$UID/com.apple.Siri.agent"
 sudo launchctl disable 'system/com.apple.Siri.agent'
+```
+
+---
+
+```sh
+# Just in Case: Revert Dock to Default
+defaults write com.apple.dock static-only -bool false
+
+# Restart Finder, Dock, and SystemUIServer
+killall Finder Dock SystemUIServer
 
 ```
 
@@ -203,48 +271,18 @@ xcode-select --install
 brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 
-# Yabai
-brew install koekeishiya/formulae/yabai
-
 # shkd
 brew install koekeishiya/formulae/skhd
 ```
 
-### Install Alfred Cask Link
-
 ```sh
-brew cask alfred link
-```
-
-### Install Yabai
-
-Install Yabai Window Manager
-
-First disable SIP:
-
-```bash
-csrutil disable
-```
-
-then after reboot:
-
-```bash
-brew install koekeishiya/formulae/yabai
-
-sudo yabai --install-sa
-
-brew services start yabai
-
-killall Dock
+# List Installed Extensions
+code --list-extensions | xargs -L 1 echo code --install-extension
 ```
 
 ### Marko Bajlovic
 
 * <https://marko.tech>
 * * <https://marko.tech/uses>
-* <https://startyparty.dev>
-* * <https://marketing.startyparty.dev>
-* <https://github.com/arbitrarily>
-* <https://c.im/@des>
 
 Sourced from all over and throughout the years.
