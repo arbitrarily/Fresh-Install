@@ -8,40 +8,37 @@ Quote time:
 ― George Bernard Shaw
 
 ## Version
->
-> `1.9.2`
+
+> `1.9.3`
 
 Last Tested on `MacOS 15.1`
 
 ## App Store Applications
 
-* [Xcode](https://apps.apple.com/us/app/xcode/id497799835)
-  * `sudo xcodebuild -license accept`
+- [Xcode](https://apps.apple.com/us/app/xcode/id497799835)
+  - `sudo xcodebuild -license accept`
 
 ## Third Party Applications
 
-* [GPT4All](https://gpt4all.io/index.html)
-* [Hyperkey](https://hyperkey.app/) Convert the caps lock key or any modifier key to the hyper key, all four modifiers combined: ⌃⌥⌘⇧ The hyper key acts as an additional modifier key that you can use in any app with keyboard shortcuts.
-* [Raycast](https://www.raycast.com/) A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable. I install this with [Homebrew](https://formulae.brew.sh/cask/raycast), just wanted to highlight it here.
-* [StartyParty](https://marketing.startyparty.dev/) for firefox, made by me
-* [StartyParty Addons](https://github.com/arbitrarily/startyparty-addons)
+- [Raycast](https://www.raycast.com/) A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable. I install this with [Homebrew](https://formulae.brew.sh/cask/raycast), just wanted to highlight it here.
+- [StartyParty](https://marketing.startyparty.dev/) for firefox, made by me
+- [StartyParty Addons](https://github.com/arbitrarily/startyparty-addons)
 
 ## Dotfiles
 
 Majority of configurations are stored in my [dotfiles](https://github.com/arbitrarily/dotfiles) repository; currently a **private** repository.
 
-* [`Dotfiles`](https://github.com/arbitrarily/dotfiles) github.com/arbitrarily/dotfiles
+- [`Dotfiles`](https://github.com/arbitrarily/dotfiles) github.com/arbitrarily/dotfiles
 
 ## Non Dotfile Settings & Configs
 
-* [`Firefox CSS`](https://github.com/arbitrarily/firefox-css) github.com/arbitrarily/firefox-css
-* [`cmus Theme`](https://github.com/arbitrarily/cmus-theme) github.com/arbitrarily/cmus-theme
+- [`cmus Theme`](https://github.com/arbitrarily/cmus-theme) github.com/arbitrarily/cmus-theme
 
 ## Fonts
 
 Fonts are Backed up to **/Dropbox/Resources**
 
-* [`Nerd Fonts`](https://github.com/ryanoasis/nerd-fonts) github.com/ryanoasis/nerd-fonts
+- [`Nerd Fonts`](https://github.com/ryanoasis/nerd-fonts) github.com/ryanoasis/nerd-fonts
 
 ## zsh
 
@@ -52,7 +49,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ## Set Up SSH Keys
 
-* <https://help.github.com/articles/generating-ssh-keys/>
+- <https://help.github.com/articles/generating-ssh-keys/>
 
 ```sh
 # Generate SSH
@@ -249,7 +246,7 @@ killall Finder Dock SystemUIServer
 
 ## Install Xcode
 
-* [https://itunes.apple.com/au/app/xcode/id497799835?mt=12](itunes.apple.com/au/app/xcode/id497799835?mt=12)
+- [https://itunes.apple.com/au/app/xcode/id497799835?mt=12](itunes.apple.com/au/app/xcode/id497799835?mt=12)
 
 ```sh
 xcode-select --install
@@ -257,7 +254,7 @@ xcode-select --install
 
 ## Install Homebrew
 
-* [https://brew.sh/](https://brew.sh/)
+- [https://brew.sh/](https://brew.sh/)
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -283,7 +280,6 @@ code --list-extensions | xargs -L 1 echo code --install-extension
 
 ### Marko Bajlovic
 
-* <https://marko.tech>
-* * <https://marko.tech/uses>
+- <https://marko.tech/uses>
 
 <small>Sourced from all over and throughout the years.</small>
