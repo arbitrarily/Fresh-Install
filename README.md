@@ -2,6 +2,9 @@
 
 The following is a guide I wrote to guide one through a fresh installation on a new machine. Enjoy!
 
+> [!NOTE]
+> [GitLab](https://gitlab.com/arbitrarily/Fresh-Install) I've moved over to Gitlab.
+
 Quote time:
 
 > “To be in hell is to drift; to be in heaven is to steer.”
